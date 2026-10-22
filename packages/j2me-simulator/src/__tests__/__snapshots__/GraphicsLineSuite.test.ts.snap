@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GraphicsLineSuite > should run GraphicsLineSuite and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("GraphicsLineSuite started")
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("=== Line Drawing ===")
+[print] println("Drawing horizontal line")
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Drawing vertical line")
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Drawing diagonal line")
+[graphics] drawShapeBatch(2, 14, "[6 vertices]", {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Drawing reverse diagonal")
+[graphics] drawShapeBatch(2, 14, "[6 vertices]", {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] flush("<surface-1>")"
+`;

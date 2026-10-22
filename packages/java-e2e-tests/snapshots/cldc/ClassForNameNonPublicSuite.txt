@@ -1,0 +1,11 @@
+=== privateInnerForName ===
+loaded = true
+name = com.com.example.ClassForNameNonPublicSuite$PrivateInner
+=== packageInnerForName ===
+loaded = true
+name = com.com.example.ClassForNameNonPublicSuite$PackageInner
+=== dotClassLiteral ===
+literal = true
+name = com.com.example.ClassForNameNonPublicSuite$PrivateInner
+=== nonExistentStillFails ===
+loaded = false

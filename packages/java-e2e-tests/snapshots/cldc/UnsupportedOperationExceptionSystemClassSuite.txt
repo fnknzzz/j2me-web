@@ -1,0 +1,36 @@
+=== defaultCtor ===
+default/class = java.lang.UnsupportedOperationException
+default/superClass = java.lang.RuntimeException
+default/message = null
+default/message_is_empty = false
+default/toString = java.lang.UnsupportedOperationException
+=== messageCtor ===
+message/class = java.lang.UnsupportedOperationException
+message/superClass = java.lang.RuntimeException
+message/message = uoe-message
+message/message_equals_input = true
+message/toString = java.lang.UnsupportedOperationException: uoe-message
+=== nullMessageCtor ===
+nullMessage/message = null
+nullMessage/message_is_not_null = false
+nullMessage/message_is_empty = false
+nullMessage/toString_has_colon = false
+nullMessage/toString = java.lang.UnsupportedOperationException
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.lang.UnsupportedOperationException
+throwDefault/message = null
+throwDefault/message_is_empty = false
+throwDefault/toString = java.lang.UnsupportedOperationException
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.lang.UnsupportedOperationException
+throwMessage/message = after-throw-uoe-message
+throwMessage/message_equals_input = true
+throwMessage/toString = java.lang.UnsupportedOperationException: after-throw-uoe-message
+=== multiInstance ===
+multi/e1Class = java.lang.UnsupportedOperationException
+multi/e2Class = java.lang.UnsupportedOperationException
+multi/e1Message = first-uoe-instance
+multi/e2Message = second-uoe-instance
+multi/sameInstance = false
+multi/messagesEqual = false
+multi/toStringEqual = false

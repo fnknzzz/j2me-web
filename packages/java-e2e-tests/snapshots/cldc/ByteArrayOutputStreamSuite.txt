@@ -1,0 +1,7 @@
+bos-size-3
+bos-bytes-1,2,3
+bos-close-ok
+bos2-size-2
+bos2-str-BC
+bos2-size-after-reset-0
+bos2-str-all-ABCD

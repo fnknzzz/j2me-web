@@ -1,0 +1,8 @@
+=== Test: Passing this in constructor ===
+Animal constructor
+Service processing animal
+Dog barks
+Dog constructor
+Service processing animal
+Dog barks
+=== Test passed ===

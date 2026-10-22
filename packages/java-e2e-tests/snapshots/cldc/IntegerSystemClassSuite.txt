@@ -1,0 +1,50 @@
+=== instance_methods ===
+a_class=java.lang.Integer
+a_intValue=42
+a_longValue=42
+a_shortValue=42
+a_byteValue=42
+a_floatValue=42.0
+a_doubleValue=42.0
+a_toString=42
+a_hashCode=42
+a_equals_b=true
+a_equals_c=false
+a_equals_null=false
+a_equals_nonInteger=false
+a_compareTo_b=0
+a_compareTo_c=1
+c_compareTo_a=-1
+min_toString=-2147483648
+max_toString=2147483647
+=== static_valueOf_and_toString ===
+valueOf_int_10=10
+valueOf_str_123=123
+valueOf_str_ff_16=255
+toString_255=255
+toString_255_16=ff
+toString_255_2=11111111
+toString_-1_10=-1
+=== static_parseInt_variants ===
+parseInt_123=123
+parseInt_space_prefix:NumberFormatException
+parseInt_overflow:NumberFormatException
+parseInt_invalid_char:NumberFormatException
+parseInt_FF_16=255
+parseInt_101_2=5
+parseInt_invalid_radix_body:NO_EXCEPTION
+=== static_radix_and_boundaries ===
+toHexString_255=ff
+toOctalString_255=377
+toBinaryString_5=101
+toHexString_-1=ffffffff
+toBinaryString_-1=11111111111111111111111111111111
+valueOf_plus_123=123
+valueOf_minus_5=-5
+valueOf_invalid_char:NumberFormatException
+valueOf_space_prefix:NumberFormatException
+valueOf_overflow:NumberFormatException
+valueOf_MIN_10=-2147483648
+valueOf_MAX_10=2147483647
+valueOf_min_overflow:NumberFormatException
+valueOf_invalid_body:NO_EXCEPTION

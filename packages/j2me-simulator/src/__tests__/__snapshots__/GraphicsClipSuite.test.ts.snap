@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GraphicsClipSuite > should run GraphicsClipSuite and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("GraphicsClipSuite started")
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("=== Clipping Operations ===")
+[print] println("Clip X: 10")
+[print] println("Clip Y: 20")
+[print] println("Clip Width: 100")
+[print] println("Clip Height: 150")
+[print] println("After clipRect - X: 20")
+[print] println("After clipRect - Y: 30")
+[print] println("After clipRect - Width: 50")
+[print] println("After clipRect - Height: 80")
+[graphics] flush("<surface-1>")"
+`;

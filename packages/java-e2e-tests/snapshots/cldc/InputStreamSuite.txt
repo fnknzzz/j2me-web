@@ -1,0 +1,32 @@
+Test 1: InputStream basic methods
+Available: 3
+Mark supported: true
+
+Test 2: InputStream read operations
+Read byte: 10
+Available after read: 2
+Bytes read into buffer: 2
+Buffer[0]: 20
+Buffer[1]: 30
+
+Test 3: InputStream mark and reset
+Read after mark: 1
+Read after mark: 2
+Read after reset: 1
+
+Test 4: InputStream skip
+Bytes skipped: 2
+Read after skip: 3
+
+Test 5: InputStream read with offset and length
+Bytes read: 3
+Buffer[0]: 0
+Buffer[1]: 10
+Buffer[2]: 20
+Buffer[3]: 30
+Buffer[4]: 0
+
+Test 6: InputStream close
+All streams closed
+
+All tests completed successfully!

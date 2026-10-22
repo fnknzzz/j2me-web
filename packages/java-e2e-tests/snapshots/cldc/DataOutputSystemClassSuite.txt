@@ -1,0 +1,17 @@
+=== interface_metadata ===
+name:java.io.DataOutput
+isInterface:true
+isAssignableFrom_DataOutputStream:true
+newInstance_InstantiationException
+=== interface_basic_writes ===
+basic_writes_size:36
+=== interface_writeUTF_variants ===
+writeUTF_ascii_len:5
+writeUTF_2bytes_len:4
+writeUTF_3bytes_len:5
+writeUTF_empty_len:2
+writeUTF_long_len:302
+=== interface_cast_and_assign ===
+instanceof_DataOutput:true
+instanceof_DataOutputStream:true
+cast_and_assign_size:4

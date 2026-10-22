@@ -1,0 +1,17 @@
+=== noArgCtor ===
+noArg/className = java.lang.NumberFormatException
+noArg/message = null
+noArg/toString = java.lang.NumberFormatException
+=== stringCtor ===
+string/className = java.lang.NumberFormatException
+string/message = bad number
+string/toString = java.lang.NumberFormatException: bad number
+string/toStringContainsMsg = true
+=== nullStringCtor ===
+nullString/className = java.lang.NumberFormatException
+nullString/message = null
+nullString/toString = java.lang.NumberFormatException
+=== thrownByParse ===
+parse/className = java.lang.NumberFormatException
+parse/message = For input string: "not_a_number"
+parse/toString = java.lang.NumberFormatException: For input string: "not_a_number"

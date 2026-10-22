@@ -1,0 +1,17 @@
+=== noArgCtor ===
+noArg/className = java.lang.OutOfMemoryError
+noArg/message = null
+noArg/toString = java.lang.OutOfMemoryError
+=== stringCtor ===
+string/className = java.lang.OutOfMemoryError
+string/message = out of memory
+string/toString = java.lang.OutOfMemoryError: out of memory
+string/toStringContainsMsg = true
+=== nullStringCtor ===
+nullString/className = java.lang.OutOfMemoryError
+nullString/message = null
+nullString/toString = java.lang.OutOfMemoryError
+=== thrownOutOfMemoryError ===
+throw/className = java.lang.OutOfMemoryError
+throw/message = thrown OOM message
+throw/toString = java.lang.OutOfMemoryError: thrown OOM message

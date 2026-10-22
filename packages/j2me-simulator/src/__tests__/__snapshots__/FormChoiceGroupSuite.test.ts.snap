@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormChoiceGroupSuite > should test ChoiceGroup and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Form ChoiceGroup Test ===")
+[print] println("Test: ChoiceGroup")
+[print] println("ChoiceGroup label: Options:")
+[print] println("Size: 3")
+[print] println("Selected index: 1")
+[print] println("Is selected (1): true")
+[print] println("Option text (1): Option 2")
+[print] println("Form ChoiceGroup test completed")"
+`;

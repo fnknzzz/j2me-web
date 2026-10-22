@@ -1,0 +1,25 @@
+=== constructors_and_empty_behavior ===
+ctor_class=java.util.Stack
+empty_initial = true
+peek_empty_EmptyStackException
+pop_empty_EmptyStackException
+search_empty = -1
+=== push_peek_pop ===
+push_r1=A
+push_r2=B
+push_r3=C
+empty_after_push = false
+peek_after_push=C
+pop_first=C
+pop_second=B
+pop_third=A
+empty_after_pops = true
+=== search_with_strings ===
+search_C = 1
+search_B = 2
+search_A = 4
+search_missing = -1
+=== search_with_custom_keys ===
+search_k1b = 2
+search_k1_ref = 2
+search_k2_new = 1

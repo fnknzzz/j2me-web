@@ -1,0 +1,15 @@
+=== noArgCtor ===
+noArg/className = java.lang.IllegalArgumentException
+noArg/message = null
+noArg/toString = java.lang.IllegalArgumentException
+=== stringCtor ===
+string/className = java.lang.IllegalArgumentException
+string/message = illegal argument
+string/toString = java.lang.IllegalArgumentException: illegal argument
+string/toStringContainsMsg = true
+=== nullStringCtor ===
+nullString/className = java.lang.IllegalArgumentException
+nullString/message = null
+nullString/toString = java.lang.IllegalArgumentException
+=== thrownByBadArgument ===
+badArg/otherException = java.lang.StringIndexOutOfBoundsException

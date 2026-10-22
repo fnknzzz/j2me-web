@@ -1,0 +1,52 @@
+=== instance_basic_values ===
+fd_class=java.lang.Float
+fd_toString=2.5
+fd_floatValue=2.5
+fd_doubleValue=2.5
+fd_intValue=2
+fd_longValue=2
+fd_shortValue=2
+fd_byteValue=2
+fd_hashCode=1075838976
+ff_toString=2.5
+ff_floatValue=2.5
+ff_doubleValue=2.5
+ff_intValue=2
+ff_longValue=2
+ff_shortValue=2
+ff_byteValue=2
+ff_hashCode=1075838976
+fn_floatValue=-3.7
+fn_doubleValue=-3.700000047683716
+fn_intValue=-3
+fn_longValue=-3
+fn_shortValue=-3
+fn_byteValue=-3
+fn_hashCode=-1066611507
+=== instance_equals_nan_inf ===
+eq_same_value=true
+eq_diff_value=false
+eq_null=false
+eq_nonFloat=false
+eq_nan_nan=true
+nan_isNaN=true
+inf_isInfinite_pos=true
+inf_isInfinite_neg=true
+inf_isNaN=false
+=== static_bits_and_checks ===
+static_toString_2.0=2.0
+bits_of_2.0=1073741824
+back_from_bits=2.0
+static_isNaN_0=false
+static_isNaN_nan=true
+static_isInfinite_pos=true
+static_isInfinite_neg=true
+static_isInfinite_0=false
+=== parseFloat_and_valueOf ===
+valueOf_float_3.25=3.25
+valueOf_string_3.5=3.5
+parseFloat_4.5=4.5
+parseFloat_space_prefix:NO_EXCEPTION
+valueOf_space_suffix:NO_EXCEPTION
+parseFloat_invalid:NumberFormatException
+valueOf_invalid:NumberFormatException

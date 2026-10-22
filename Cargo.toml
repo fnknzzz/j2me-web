@@ -1,0 +1,22 @@
+[workspace]
+members = [
+    "crates/j2me-core",
+    "crates/j2me-core-native-macros",
+]
+resolver = "2"
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
+strip = true
+panic = "abort"
+
+[profile.profiling]
+inherits = "release"
+strip = false
+debug = 1
+
+[profile.dev]
+opt-level = 0
+debug = true

@@ -1,0 +1,20 @@
+=== defaultCtor ===
+default/class = java.lang.InterruptedException
+default/message = null
+default/toString = java.lang.InterruptedException
+=== messageCtor ===
+message/class = java.lang.InterruptedException
+message/message = interrupted-error
+message/toString = java.lang.InterruptedException: interrupted-error
+=== nullMessageCtor ===
+nullMessage/class = java.lang.InterruptedException
+nullMessage/message = null
+nullMessage/toString = java.lang.InterruptedException
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.lang.InterruptedException
+throwDefault/message = null
+throwDefault/toString = java.lang.InterruptedException
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.lang.InterruptedException
+throwMessage/message = after-throw
+throwMessage/toString = java.lang.InterruptedException: after-throw

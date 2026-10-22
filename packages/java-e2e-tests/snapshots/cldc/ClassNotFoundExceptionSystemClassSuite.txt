@@ -1,0 +1,17 @@
+=== noArgCtor ===
+noArg/className = java.lang.ClassNotFoundException
+noArg/message = null
+noArg/toString = java.lang.ClassNotFoundException
+=== stringCtor ===
+string/className = java.lang.ClassNotFoundException
+string/message = target class not found
+string/toString = java.lang.ClassNotFoundException: target class not found
+string/toStringContainsMsg = true
+=== nullStringCtor ===
+nullString/className = java.lang.ClassNotFoundException
+nullString/message = null
+nullString/toString = java.lang.ClassNotFoundException
+=== thrownByClassForName ===
+forName/className = java.lang.ClassNotFoundException
+forName/message = com.com.example.NonExistingClass_123456
+forName/toString = java.lang.ClassNotFoundException: com.com.example.NonExistingClass_123456

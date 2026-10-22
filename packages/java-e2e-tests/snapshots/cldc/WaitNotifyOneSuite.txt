@@ -1,0 +1,6 @@
+T1-start
+N-start
+N-end
+T2-start
+T1-after-wait
+T2-after-wait

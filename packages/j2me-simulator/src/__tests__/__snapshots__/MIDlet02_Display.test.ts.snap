@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MIDlet02_Display > should run MIDlet02_Display and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("Getting display...")
+[print] println("Display obtained")
+[print] println("Display class: javax.microedition.lcdui.Display")"
+`;

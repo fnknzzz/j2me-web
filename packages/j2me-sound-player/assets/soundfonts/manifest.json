@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "source": "GeneralUser GS 1.472",
+  "format": "sf3",
+  "compression": {
+    "encoder": "ffmpeg:vorbis",
+    "quality": 5
+  },
+  "families": {
+    "piano": {
+      "file": "piano.sf3",
+      "programStart": 0,
+      "programEnd": 7,
+      "presets": 17,
+      "bytes": 1303664
+    },
+    "chromatic": {
+      "file": "chromatic.sf3",
+      "programStart": 8,
+      "programEnd": 15,
+      "presets": 13,
+      "bytes": 379304
+    },
+    "organ": {
+      "file": "organ.sf3",
+      "programStart": 16,
+      "programEnd": 23,
+      "presets": 12,
+      "bytes": 411948
+    },
+    "guitar": {
+      "file": "guitar.sf3",
+      "programStart": 24,
+      "programEnd": 31,
+      "presets": 17,
+      "bytes": 1040814
+    },
+    "bass": {
+      "file": "bass.sf3",
+      "programStart": 32,
+      "programEnd": 39,
+      "presets": 14,
+      "bytes": 403374
+    },
+    "strings": {
+      "file": "strings.sf3",
+      "programStart": 40,
+      "programEnd": 47,
+      "presets": 9,
+      "bytes": 1273668
+    },
+    "ensemble": {
+      "file": "ensemble.sf3",
+      "programStart": 48,
+      "programEnd": 55,
+      "presets": 19,
+      "bytes": 1705218
+    },
+    "brass": {
+      "file": "brass.sf3",
+      "programStart": 56,
+      "programEnd": 63,
+      "presets": 17,
+      "bytes": 589494
+    },
+    "reed": {
+      "file": "reed.sf3",
+      "programStart": 64,
+      "programEnd": 71,
+      "presets": 8,
+      "bytes": 590008
+    },
+    "pipe": {
+      "file": "pipe.sf3",
+      "programStart": 72,
+      "programEnd": 79,
+      "presets": 9,
+      "bytes": 453534
+    },
+    "synth-lead": {
+      "file": "synth-lead.sf3",
+      "programStart": 80,
+      "programEnd": 87,
+      "presets": 18,
+      "bytes": 572430
+    },
+    "synth-pad": {
+      "file": "synth-pad.sf3",
+      "programStart": 88,
+      "programEnd": 95,
+      "presets": 13,
+      "bytes": 1147678
+    },
+    "synth-effects": {
+      "file": "synth-effects.sf3",
+      "programStart": 96,
+      "programEnd": 103,
+      "presets": 13,
+      "bytes": 724004
+    },
+    "ethnic": {
+      "file": "ethnic.sf3",
+      "programStart": 104,
+      "programEnd": 111,
+      "presets": 9,
+      "bytes": 669458
+    },
+    "percussive": {
+      "file": "percussive.sf3",
+      "programStart": 112,
+      "programEnd": 119,
+      "presets": 14,
+      "bytes": 326626
+    },
+    "sound-effects": {
+      "file": "sound-effects.sf3",
+      "programStart": 120,
+      "programEnd": 127,
+      "presets": 45,
+      "bytes": 644452
+    },
+    "drums": {
+      "file": "drums.sf3",
+      "presets": 22,
+      "bytes": 1945844
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RMSEnumerationSuite > should test record enumeration and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== RecordEnumeration Test ===")
+[rms] load("rms:EnumTest") => null
+[rms] save("rms:EnumTest", "<ArrayBuffer:20bytes>")
+[rms] save("rms:EnumTest", "<ArrayBuffer:36bytes>")
+[rms] save("rms:EnumTest", "<ArrayBuffer:52bytes>")
+[rms] save("rms:EnumTest", "<ArrayBuffer:68bytes>")
+[rms] save("rms:EnumTest", "<ArrayBuffer:84bytes>")
+[rms] save("rms:EnumTest", "<ArrayBuffer:100bytes>")
+[print] println("Added 5 records")
+[print] println("Created enumeration")
+[print] println("Num records: 5")
+[print] println("Has next: true")
+[print] println("Has previous: true")
+[print] println("Record 1 ID: 5, Data: Record 4")
+[print] println("Record 2 ID: 3, Data: Record 2")
+[print] println("Error: null")"
+`;

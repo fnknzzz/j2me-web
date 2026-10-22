@@ -1,0 +1,44 @@
+=== ctor_and_null_stream ===
+ctor_normal_initial_len=0
+after_write_int_baos_len=1
+null_stream_ops_exception=java.lang.NullPointerException
+=== primitives_write ===
+len_initial=0
+len_after_writeBoolean_true=1
+len_after_writeBoolean_false=2
+len_after_writeByte=3
+len_after_writeShort=5
+len_after_writeChar=7
+len_after_writeInt=11
+len_after_writeLong=19
+len_after_writeFloat=23
+len_after_writeDouble=31
+baos_len_after_primitives=31
+first_32_bytes_unsigned=1,0,255,18,52,0,90,1,2,3,4,1,2,3,4,5,6,7,8,63,192,0,0,63,248,0,0,0,0,0,0
+=== byte_array_variants ===
+len_after_write_array=5
+bytes_after_write_array=10,20,30,40,50
+len_after_write_array_off_len=8
+bytes_after_write_array_off_len=10,20,30,40,50,20,30,40
+write_off_negative:java.lang.IndexOutOfBoundsException
+len_after_write_off_negative=8
+write_len_negative:java.lang.IndexOutOfBoundsException
+len_after_write_len_negative=8
+write_off_plus_len_too_big:java.lang.IndexOutOfBoundsException
+len_after_write_off_plus_len_too_big=8
+write_null_array:java.lang.NullPointerException
+len_after_write_null_array=8
+write_null_array_off_len:java.lang.NullPointerException
+len_after_write_null_array_off_len=8
+len_before_errors=8
+=== string_and_utf ===
+writeChars_len=4
+writeChars_bytes_unsigned=0,65,78,45
+writeUTF_len=8
+writeUTF_length_prefix_and_bytes=0,6,65,192,128,228,184,173
+=== flush_and_close ===
+len_before_flush_close=4
+len_after_flush=4
+len_after_close=4
+write_after_close:NO_EXCEPTION len=8
+bytes_after_close_unsigned=1,2,3,4,5,6,7,8

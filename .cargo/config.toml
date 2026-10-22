@@ -1,0 +1,5 @@
+# Browser host functions are supplied by `env` imports when the generated
+# module is instantiated in crates/j2me-core/core.ts. Keep them unresolved at
+# link time so wasm-ld emits imports instead of requiring native definitions.
+[target.wasm32-unknown-unknown]
+rustflags = ["-C", "link-arg=--allow-undefined"]

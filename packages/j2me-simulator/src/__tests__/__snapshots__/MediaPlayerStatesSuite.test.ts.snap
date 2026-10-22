@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MediaPlayerStatesSuite > should test player state transitions and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Media Player States Test ===")
+[print] println("Test: Player state transitions")
+[media] createPlayer({"locator":"/tone.mid"})
+[print] println("State UNREALIZED: true")
+[print] println("State REALIZED: true")
+[print] println("State PREFETCHED: true")
+[media] play()
+[print] println("State STARTED: true")
+[print] println("Duration: 0")
+[print] println("Media time: 0")
+[media] stop()
+[print] println("State after stop: 300")
+[print] println("Player deallocated")
+[media] close()
+[print] println("State CLOSED: true")
+[print] println("Media player states test completed")"
+`;

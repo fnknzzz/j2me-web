@@ -1,0 +1,17 @@
+=== noArgCtor ===
+noArg/className = java.lang.ArithmeticException
+noArg/message = null
+noArg/toString = java.lang.ArithmeticException
+=== stringCtor ===
+string/className = java.lang.ArithmeticException
+string/message = custom arithmetic error
+string/toString = java.lang.ArithmeticException: custom arithmetic error
+string/toStringContainsMsg = true
+=== nullStringCtor ===
+nullString/className = java.lang.ArithmeticException
+nullString/message = null
+nullString/toString = java.lang.ArithmeticException
+=== thrownByDivision ===
+division/className = java.lang.ArithmeticException
+division/message = / by zero
+division/toString = java.lang.ArithmeticException: / by zero

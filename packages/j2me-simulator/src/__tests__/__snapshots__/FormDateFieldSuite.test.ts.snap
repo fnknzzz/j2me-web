@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormDateFieldSuite > should test DateField and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Form DateField Test ===")
+[print] println("Test: DateField")
+[print] println("DateField label: Date:")
+[print] println("Input mode: 1")
+[print] println("Date set successfully")
+[print] println("Date retrieved successfully")
+[print] println("Form DateField test completed")"
+`;

@@ -1,0 +1,33 @@
+=== noArgCtor ===
+noArg/className = java.lang.StringIndexOutOfBoundsException
+noArg/message = null
+noArg/toString = java.lang.StringIndexOutOfBoundsException
+=== stringCtor ===
+string/className = java.lang.StringIndexOutOfBoundsException
+string/message = string index error
+string/toString = java.lang.StringIndexOutOfBoundsException: string index error
+string/toStringContainsMsg = true
+=== nullStringCtor ===
+nullString/className = java.lang.StringIndexOutOfBoundsException
+nullString/message = null
+nullString/toString = java.lang.StringIndexOutOfBoundsException
+=== intCtorPositive ===
+intPos/message = String index out of range: 5
+intPos/toString = java.lang.StringIndexOutOfBoundsException: String index out of range: 5
+intPos/toStringContainsIndex = true
+=== intCtorZero ===
+intZero/message = String index out of range: 0
+intZero/toString = java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+intZero/toStringContainsIndex = true
+=== intCtorNegative ===
+intNeg/message = String index out of range: -3
+intNeg/toString = java.lang.StringIndexOutOfBoundsException: String index out of range: -3
+intNeg/toStringContainsIndex = true
+=== thrownByCharAtPositiveIndex ===
+charAtPos/className = java.lang.StringIndexOutOfBoundsException
+charAtPos/message = String index out of range: 5
+charAtPos/toString = java.lang.StringIndexOutOfBoundsException: String index out of range: 5
+=== thrownBySubstringNegativeIndex ===
+substringNeg/className = java.lang.StringIndexOutOfBoundsException
+substringNeg/message = String index out of range: -1
+substringNeg/toString = java.lang.StringIndexOutOfBoundsException: String index out of range: -1

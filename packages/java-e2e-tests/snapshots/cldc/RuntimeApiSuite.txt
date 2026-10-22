@@ -1,0 +1,4 @@
+free-reasonable-yes
+total-reasonable-yes
+free-le-total-yes
+gc-ok

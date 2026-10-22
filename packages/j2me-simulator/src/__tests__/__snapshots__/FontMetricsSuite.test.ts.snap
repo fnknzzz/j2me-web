@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FontMetricsSuite > should run FontMetricsSuite and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] stringWidth("A") => 8
+[font] stringWidth("i") => 8
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] stringWidth("A") => 8
+[font] stringWidth("i") => 8
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] stringWidth("Hello") => 40
+[font] stringWidth("ell") => 24
+[font] stringWidth("Hello") => 40
+[font] stringWidth("ell") => 24
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("FontMetricsSuite started")
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("=== Font Metrics ===")
+[print] println("Monospace 'A' width: 8")
+[print] println("Monospace 'i' width: 8")
+[print] println("Proportional 'A' width: 8")
+[print] println("Proportional 'i' width: 8")
+[print] println("String 'Hello' width: 40")
+[print] println("Substring 'ell' width: 24")
+[print] println("Chars full width: 40")
+[print] println("Chars partial width: 24")
+[graphics] flush("<surface-1>")"
+`;

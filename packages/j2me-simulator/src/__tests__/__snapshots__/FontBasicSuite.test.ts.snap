@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FontBasicSuite > should run FontBasicSuite and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("FontBasicSuite started")
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("=== Font Basic Operations ===")
+[print] println("Default font face: 0")
+[print] println("Default font style: 0")
+[print] println("Default font size: 0")
+[print] println("Small font height: 16")
+[print] println("Small font baseline: 12")
+[print] println("Medium bold height: 16")
+[print] println("Large italic height: 16")
+[graphics] flush("<surface-1>")"
+`;

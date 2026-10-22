@@ -1,0 +1,34 @@
+=== ctor_and_null_out ===
+ctor_normal_bytes_len=1
+ctor_normal_first_byte=65
+ctor_encoding_bytes_len=1
+ctor_encoding_first_byte=66
+ctor_null_out_ex=java.lang.NullPointerException
+=== write_int_and_mask ===
+write_int_mask_len=7
+write_int_mask_unsigned=199,191,239,191,191,196,163
+=== write_char_array_offsets ===
+write_char_valid_len=3
+write_char_valid_bytes=66,67,68
+write_char_off_negative_ex=java.lang.IndexOutOfBoundsException
+write_char_len_negative_ex=java.lang.IndexOutOfBoundsException
+write_char_off_plus_len_too_big_ex=java.lang.IndexOutOfBoundsException
+write_char_after_errors_len=3
+write_char_size_before_errors=3
+write_char_null_buf_ex=java.lang.NullPointerException
+write_char_after_null_len=3
+=== write_string_offsets ===
+write_str_valid_len=3
+write_str_valid_bytes=101,108,108
+write_str_off_negative_ex=java.lang.StringIndexOutOfBoundsException
+write_str_len_negative_ex=java.lang.IndexOutOfBoundsException
+write_str_off_plus_len_too_big_ex=java.lang.StringIndexOutOfBoundsException
+write_str_after_errors_len=3
+write_str_size_before_errors=3
+write_str_null_ex=java.lang.NullPointerException
+write_str_after_null_len=3
+=== flush_and_close_behaviors ===
+flush_close_initial_len=1
+flush_close_after_close_len=1
+flush_close_write_after_close_ex=java.io.IOException
+flush_close_null_out_ex=java.lang.NullPointerException

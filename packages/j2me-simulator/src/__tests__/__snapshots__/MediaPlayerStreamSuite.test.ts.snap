@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MediaPlayerStreamSuite > should test creating player from stream and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Media Player Stream Test ===")
+[print] println("Test: Create player from stream")
+[media] createPlayer({"data":{"0":100,"1":117,"2":109,"3":109,"4":121,"5":32,"6":109,"7":105,"8":100,"9":105,"10":32,"11":99,"12":111,"13":110,"14":116,"15":101,"16":110,"17":116,"18":10},"contentType":"audio/midi"})
+[media] setVolume(100)
+[print] println("Player created from stream")
+[print] println("State: 100")
+[media] close()
+[print] println("Media player stream test completed")"
+`;

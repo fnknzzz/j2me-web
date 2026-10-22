@@ -1,0 +1,20 @@
+=== defaultCtor ===
+default/class = java.lang.Exception
+default/message = null
+default/toString = java.lang.Exception
+=== messageCtor ===
+message/class = java.lang.Exception
+message/message = exception-error
+message/toString = java.lang.Exception: exception-error
+=== nullMessageCtor ===
+nullMessage/class = java.lang.Exception
+nullMessage/message = null
+nullMessage/toString = java.lang.Exception
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.lang.Exception
+throwDefault/message = null
+throwDefault/toString = java.lang.Exception
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.lang.Exception
+throwMessage/message = after-throw
+throwMessage/toString = java.lang.Exception: after-throw

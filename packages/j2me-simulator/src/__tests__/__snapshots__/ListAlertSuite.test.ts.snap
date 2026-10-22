@@ -1,0 +1,52 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ListAlertSuite > should test List and Alert components and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[graphics] createSurface("<surface-2>", 32, 32)
+[graphics] createSurface("<surface-3>", 32, 32)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== List and Alert Test ===")
+[print] println("Test 1: Exclusive List")
+[print] println("List title: Select One")
+[print] println("List size: 3")
+[print] println("Selected index: 1")
+[print] println("Is selected (1): true")
+[print] println("Item text (1): Item 2")
+[print] println("Updated item text (1): Updated Item 2")
+[print] println("Size after insert: 4")
+[print] println("Size after delete: 3")
+[print] println("Test 2: Multiple List")
+[print] println("List size: 4")
+[print] println("Selected count: 2")
+[print] println("Selected: Option A")
+[print] println("Selected: Option C")
+[print] println("Selection flags updated")
+[print] println("Test 3: Implicit List")
+[print] println("List size: 4")
+[print] println("Implicit list created with commands")
+[print] println("Test 4: Alert basics")
+[print] println("Alert title: Warning")
+[print] println("Alert text: This is a warning message")
+[print] println("Alert timeout: 3000")
+[print] println("Alert timeout (FOREVER): -2")
+[graphics] drawRGBA("[1024 pixels]", 0, 0, 32, 32, {"surfaceId":"<surface-2>","color":0,"clipX":0,"clipY":0,"clipWidth":32,"clipHeight":32,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] getPixels("[1024 pixels]", 0, 32, 0, 0, 32, 32, {"surfaceId":"<surface-2>","color":0,"clipX":0,"clipY":0,"clipWidth":32,"clipHeight":32,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawRGBA("[1024 pixels]", 0, 0, 32, 32, {"surfaceId":"<surface-3>","color":0,"clipX":0,"clipY":0,"clipWidth":32,"clipHeight":32,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Alert image set")
+[print] println("Alert image retrieved")
+[print] println("Test 5: Alert types")
+[print] println("Info alert type: true")
+[print] println("Warning alert type: true")
+[print] println("Error alert type: true")
+[print] println("Confirmation alert type: true")
+[print] println("Alarm alert type: true")
+[print] println("Alert types tested")
+[print] println("List and Alert test completed")"
+`;

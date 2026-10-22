@@ -1,0 +1,36 @@
+{
+  "name": "@jsjvm/j2me-core",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": true,
+  "exports": {
+    ".": "./index.ts",
+    "./m3g-wire": "./src/gles1_webgpu/schema/m3g_webgpu_wire.json"
+  },
+  "scripts": {
+    "wire:check": "node scripts/generate-m3g-wire.mjs --validate",
+    "jar:build:java-e2e": "pnpm --dir ../../packages/java-e2e-tests jar:build-all:cldc",
+    "jar:build:test-fixtures": "node tests/java/multi-midlet-suite-switch/build-jar.js",
+    "jar:prepare": "npm run build:j2me-rt:debug && npm run jar:build:java-e2e && npm run jar:build:test-fixtures",
+    "build:j2me-rt:debug": "make -C j2me-rt MODE=debug classes.jar",
+    "build:j2me-rt:prod": "make -C j2me-rt MODE=prod classes.jar",
+    "build:wasm:debug": "node scripts/build-wasm.mjs debug && mkdir -p dist && cp ../../target/wasm32-unknown-unknown/debug/j2me_core.wasm j2me_core.wasm && cp ../../target/wasm32-unknown-unknown/debug/j2me_core.wasm dist/j2me_core.wasm",
+    "build:wasm:profiling": "node scripts/build-wasm.mjs profiling && mkdir -p dist && cp ../../target/wasm32-unknown-unknown/profiling/j2me_core.wasm j2me_core.wasm && cp ../../target/wasm32-unknown-unknown/profiling/j2me_core.wasm dist/j2me_core.wasm",
+    "build:wasm": "node scripts/build-wasm.mjs release && mkdir -p dist && cp ../../target/wasm32-unknown-unknown/release/j2me_core.wasm j2me_core.wasm && cp ../../target/wasm32-unknown-unknown/release/j2me_core.wasm dist/j2me_core.wasm",
+    "build:ts": "tsc",
+    "build:debug": "npm run build:j2me-rt:debug && npm run build:wasm:debug && npm run build:ts",
+    "build": "npm run build:j2me-rt:prod && npm run build:wasm && npm run build:ts",
+    "test": "npm run jar:prepare && npm run build:wasm && vitest run && cargo test",
+    "test:rust": "npm run jar:prepare && cargo test",
+    "test:e2e": "npm run jar:prepare && vitest run"
+  },
+  "devDependencies": {
+    "@jsjvm/java-e2e-tests": "workspace:*",
+    "@types/node": "^22.15.17",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.5"
+  }
+}

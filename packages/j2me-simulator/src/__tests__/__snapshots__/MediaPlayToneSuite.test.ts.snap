@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MediaPlayToneSuite > should test Manager.playTone and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Media Play Tone Test ===")
+[print] println("Test: Play tone")
+[media] playTone(60, 500, 100)
+[print] println("Tone played: note 60, duration 500ms, volume 100")
+[media] playTone(64, 300, 80)
+[print] println("Tone played: note 64, duration 300ms, volume 80")
+[media] playTone(67, 400, 90)
+[print] println("Tone played: note 67, duration 400ms, volume 90")
+[print] println("Media play tone test completed")"
+`;

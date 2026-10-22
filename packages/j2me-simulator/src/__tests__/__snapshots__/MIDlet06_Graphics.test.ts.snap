@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MIDlet06_Graphics > should run MIDlet06_Graphics and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[graphics] createSurface("<surface-2>", 64, 32)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawRGBA("[2048 pixels]", 0, 0, 64, 32, {"surfaceId":"<surface-2>","color":0,"clipX":0,"clipY":0,"clipWidth":64,"clipHeight":32,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("=== Graphics Test ===")
+[print] println("Setting color...")
+[print] println("Color set")
+[print] println("Drawing rect...")
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-2>","color":16711680,"clipX":0,"clipY":0,"clipWidth":64,"clipHeight":32,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Rect drawn")
+[print] println("Graphics test complete")
+[graphics] flush("<surface-1>")"
+`;

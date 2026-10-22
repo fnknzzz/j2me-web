@@ -1,0 +1,20 @@
+=== YIELD Refactor Benefits ===
+
+Test 1: Basic Loop
+worker-start
+worker-counter=50
+worker-end
+
+Test 2: Nested Calls
+nested-start
+depth1=10
+depth2=10
+nested-end
+
+Test 3: Explicit Yield
+yield-start
+before=15
+after=15
+yield-end
+
+=== All Tests Passed ===

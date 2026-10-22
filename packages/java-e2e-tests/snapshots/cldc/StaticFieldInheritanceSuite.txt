@@ -1,0 +1,31 @@
+=== Static Field Inheritance Test ===
+Test 1: Child class static field with same name as parent instance field
+Child.value (static) = 100
+After Child.value = 200: 200
+Test 2: Parent instance field is independent
+child.getParentValue() (instance) = 10
+After setParentValue(300): 300
+Test 3: Static and instance fields are separate
+Child.value (static) still = 200
+child.getParentValue() (instance) still = 300
+Test 4: Multiple levels of inheritance
+GrandChild.value (static) = 200
+gc.getParentValue() (instance) = 10
+Test 5: putstatic on GrandChild (inherited static field)
+After GrandChild.value = 500: 500
+Child.value should also be 500: 500
+Test 6: getstatic/putstatic with different field types
+ChildWithMultipleFields.count (static) = 100
+ChildWithMultipleFields.name (static) = child-static
+After update - count: 999, name: updated
+Test 7: GrandChildWithMultipleFields inherits static fields
+GrandChildWithMultipleFields.count (inherited static) = 999
+GrandChildWithMultipleFields.name (inherited static) = updated
+After update via GrandChild - count: 1234, name: grandchild
+ChildWithMultipleFields should reflect same values - count: 1234, name: grandchild
+Test 8: Instance fields remain independent after static field operations
+gcm.getParentCount() (instance) = 1
+gcm.getParentName() (instance) = parent
+After instance update - count: 777, name: instance-name
+Static fields unchanged - count: 1234, name: grandchild
+=== All Tests Passed ===

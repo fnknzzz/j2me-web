@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MediaToneControlSuite > should test ToneControl and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Media Tone Control Test ===")
+[print] println("Test: ToneControl")
+[media] createPlayer({"locator":"device://tone"})
+[print] println("ToneControl obtained")
+[print] println("Tone sequence set")
+[media] close()
+[print] println("Media tone control test completed")"
+`;

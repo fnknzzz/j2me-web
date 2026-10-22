@@ -1,0 +1,29 @@
+=== ctor_one_arg_basic ===
+class_name=java.lang.RuntimePermission
+super_class_name=java.security.BasicPermission
+name=loadLibrary.foo
+actions=
+toString=("java.lang.RuntimePermission" "loadLibrary.foo")
+=== ctor_two_args_and_actions ===
+p1_name=file.read
+p2_name=file.read
+p3_name=file.exec
+p1_actions=
+p2_actions=
+p3_actions=
+p1_equals_p2=true
+p1_equals_p3=false
+=== name_boundaries_null_and_empty ===
+empty_getName=exception:IllegalArgumentException
+null_getName=exception:IllegalArgumentException
+null2_getName=exception:IllegalArgumentException
+empty_equals_null=exception:IllegalArgumentException
+null_equals_null2=exception:IllegalArgumentException
+=== equals_hashCode_and_cross_type ===
+p1_equals_p2=true
+p1_equals_p3=false
+p1_hashCode=121454539
+p2_hashCode=121454539
+p3_hashCode=121454540
+p1_equals_null=false
+p1_equals_string=false

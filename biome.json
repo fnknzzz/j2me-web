@@ -1,0 +1,43 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.2/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "includes": [
+      "crates/j2me-core/**/*.ts",
+      "packages/**/*.ts",
+      "tools/**/*.ts",
+      "tools/**/*.mjs",
+      "!crates/j2me-core/j2me-rt/**/*.java",
+      "!crates/j2me-core/src/m3gcore",
+      "!tools/visual-snapshot/cases.json"
+    ]
+  },
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noNonNullAssertion": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noAssignInExpressions": "off"
+      },
+      "complexity": {
+        "useSimpleNumberKeys": "off"
+      }
+    }
+  }
+}

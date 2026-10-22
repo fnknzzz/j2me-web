@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormGaugeSuite > should test Gauge and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Form Gauge Test ===")
+[print] println("Test: Gauge")
+[print] println("Gauge label: Progress:")
+[print] println("Max value: 100")
+[print] println("Current value: 50")
+[print] println("Is interactive: true")
+[print] println("Updated value: 75")
+[print] println("Form Gauge test completed")"
+`;

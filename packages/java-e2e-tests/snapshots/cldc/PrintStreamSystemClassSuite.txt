@@ -1,0 +1,59 @@
+=== ctor_and_toString ===
+ps_toString=java.io.PrintStream@<~hash@1>
+ps_ctor_null_ex=java.lang.NullPointerException
+=== print_overloads ===
+print_boolean:true,false
+print_int_like:123,-1,-1,0
+print_float_double:1.5,2.0,1.5,2.0
+print_char_and_array:A|中B
+print_string_and_object:hello|MyObject-x
+=== println_overloads ===
+println_boolean-true
+println_int-123
+println_long-123
+println_double-1.25
+println_charArray-XY
+println_object-MyObject-y
+true
+1
+2
+3
+4
+5.0
+6.0
+Z
+str
+QR
+MyObject-z
+
+=== write_methods ===
+-- write_int_mask --
+�A
+-- write_byte_array_normal --
+BC
+-- write_byte_array_bounds --
+write_off_negative:IndexOutOfBoundsException
+write_len_negative:IndexOutOfBoundsException
+write_off_plus_len_too_big:IndexOutOfBoundsException
+-- write_byte_array_null --
+write_null_array:java.lang.NullPointerException
+=== float_and_double_formats ===
+-- float_formats --
+0.0
+1.0
+1.5
+NaN
+Infinity
+-Infinity
+-- double_formats --
+0.0
+2.0
+2.5
+NaN
+Infinity
+-Infinity
+=== flush_close_checkError ===
+-- checkError_and_setError --
+checkError_before=false
+after_flush
+call_setError_start

@@ -1,0 +1,6 @@
+=== nonNullReferent ===
+nonNull/firstNotNull = true
+nonNull/secondEqualsFirst = true
+nonNull/equalsTarget = true
+=== nullReferent ===
+null/gotNull = true

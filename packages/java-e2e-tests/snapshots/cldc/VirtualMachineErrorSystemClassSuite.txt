@@ -1,0 +1,36 @@
+=== defaultCtor ===
+default/class = com.com.example.VirtualMachineErrorSystemClassSuite$1
+default/superClass = java.lang.VirtualMachineError
+default/message = null
+default/message_is_empty = false
+default/toString = com.com.example.VirtualMachineErrorSystemClassSuite$1
+=== messageCtor ===
+message/class = com.com.example.VirtualMachineErrorSystemClassSuite$2
+message/superClass = java.lang.VirtualMachineError
+message/message = vm-error-message
+message/message_equals_input = true
+message/toString = com.com.example.VirtualMachineErrorSystemClassSuite$2: vm-error-message
+=== nullMessageCtor ===
+nullMessage/message = null
+nullMessage/message_is_not_null = false
+nullMessage/message_is_empty = false
+nullMessage/toString_has_colon = false
+nullMessage/toString = com.com.example.VirtualMachineErrorSystemClassSuite$3
+=== throwCatchDefault ===
+throwDefault/caughtClass = com.com.example.VirtualMachineErrorSystemClassSuite$4
+throwDefault/message = null
+throwDefault/message_is_empty = false
+throwDefault/toString = com.com.example.VirtualMachineErrorSystemClassSuite$4
+=== throwCatchMessage ===
+throwMessage/caughtClass = com.com.example.VirtualMachineErrorSystemClassSuite$5
+throwMessage/message = after-throw-vm-error
+throwMessage/message_equals_input = true
+throwMessage/toString = com.com.example.VirtualMachineErrorSystemClassSuite$5: after-throw-vm-error
+=== multiInstance ===
+multi/e1Class = com.com.example.VirtualMachineErrorSystemClassSuite$6
+multi/e2Class = com.com.example.VirtualMachineErrorSystemClassSuite$7
+multi/e1Message = first-vm-error-instance
+multi/e2Message = second-vm-error-instance
+multi/sameInstance = false
+multi/messagesEqual = false
+multi/toStringEqual = false

@@ -1,0 +1,39 @@
+Test 1: constructors and size
+bos1-size-initial=0
+bos2-size-initial=0
+IllegalArgumentException as expected for negative initial size
+
+Test 2: write(int) and capacity growth
+bos-size-after-write-int=10
+bos-bytes-after-write-int=1,2,3,4,5,6,7,8,9,10
+write-int-mask-values=-1,35
+write-int-mask-unsigned=255,35
+
+Test 3: write(byte[], off, len) and bounds
+bos-size-after-partial-write=3
+bos-bytes-after-partial-write=20,30,40
+bos-size-after-append=8
+bos-bytes-after-append=20,30,40,10,20,30,40,50
+IndexOutOfBoundsException as expected for off<0
+size-unchanged-after-off-negative=8
+IndexOutOfBoundsException as expected for len<0
+size-unchanged-after-len-negative=8
+IndexOutOfBoundsException as expected for off+len>length
+size-unchanged-after-off-plus-len-too-big=8
+NullPointerException as expected for null src
+
+Test 4: toByteArray() copy semantics
+first-toByteArray=AB
+second-toByteArray=AB
+
+Test 5: reset() and close() behavior
+size-before-reset=3
+size-after-reset=0
+toByteArray-after-reset-length=0
+size-after-close-and-write=2
+bytes-after-close-and-write=10,20
+
+Test 6: toString() encoding behavior
+empty-toString-length=0
+toString-length=3
+toString-char-codes=65533,65533,65

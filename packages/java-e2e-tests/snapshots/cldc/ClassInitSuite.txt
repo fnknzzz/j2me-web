@@ -1,0 +1,3 @@
+CLINIT
+FOO
+FOO

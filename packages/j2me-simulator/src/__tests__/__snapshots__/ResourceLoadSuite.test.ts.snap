@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ResourceLoadSuite > should load resources from JAR and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Resource Loading Test ===")
+[print] println("Test 1: Class.getResourceAsStream")
+[print] println("Resource found: /test.txt")
+[print] println("Available bytes: 70")
+[print] println("First byte: 72")
+[print] println("Stream closed")
+[print] println("Test 2: Absolute path resource")
+[print] println("Resource found: /images/icon.png")
+[print] println("Available bytes: 77")
+[print] println("Test 3: Relative path resource")
+[print] println("Resource found: data.bin")
+[print] println("Available bytes: 32")
+[print] println("Test 4: Non-existent resource")
+[print] println("Correctly returned null for non-existent resource")
+[print] println("Resource loading test completed")"
+`;

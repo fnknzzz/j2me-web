@@ -1,0 +1,29 @@
+=== defaultCtor ===
+default/class = java.lang.SecurityException
+default/superClass = java.lang.RuntimeException
+default/message = null
+default/toString = java.lang.SecurityException
+=== messageCtor ===
+message/class = java.lang.SecurityException
+message/superClass = java.lang.RuntimeException
+message/message = sec-error
+message/toString = java.lang.SecurityException: sec-error
+=== nullMessageCtor ===
+nullMessage/class = java.lang.SecurityException
+nullMessage/message = null
+nullMessage/toString = java.lang.SecurityException
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.lang.SecurityException
+throwDefault/message = null
+throwDefault/toString = java.lang.SecurityException
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.lang.SecurityException
+throwMessage/message = after-throw-security
+throwMessage/toString = java.lang.SecurityException: after-throw-security
+=== multiInstance ===
+multi/e1Class = java.lang.SecurityException
+multi/e2Class = java.lang.SecurityException
+multi/e1Message = first-sec-instance
+multi/e2Message = second-sec-instance
+multi/sameInstance = false
+multi/messagesEqual = false

@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ResourcePackageSuite > should load resources from JAR and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Resource Package Test ===")
+[print] println("Test 1: Load text resource")
+[print] println("Resource found, available bytes: 86")
+[print] println("Bytes read: 86")
+[print] println("First byte value: 72")
+[print] println("Second byte value: 101")
+[print] println("Text resource test passed")
+[print] println("Test 2: Load binary resource")
+[print] println("Binary resource available bytes: 7")
+[print] println("Read int value: 12345")
+[print] println("Read short value: 678")
+[print] println("Read byte value: 42")
+[print] println("Binary resource test passed")
+[print] println("Test 3: Load image resource")
+[graphics] createSurface("<surface-2>", 100, 100)
+[print] println("Image loaded successfully")
+[print] println("Image width: 100")
+[print] println("Image height: 100")
+[print] println("Is mutable: false")
+[print] println("Test 4: Load nested directory resource")
+[print] println("Nested resource available bytes: 18")
+[print] println("Bytes read from nested resource: 10")
+[print] println("Nested resource test passed")
+[print] println("Resource package test completed")"
+`;

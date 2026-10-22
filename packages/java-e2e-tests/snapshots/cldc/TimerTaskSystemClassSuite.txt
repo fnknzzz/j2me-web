@@ -1,0 +1,22 @@
+=== ctor_and_initial_state ===
+ctor/class_name = com.com.example.TimerTaskSystemClassSuite$1
+ctor/is_runnable = true
+ctor/scheduled_time_initial = 0
+ctor/scheduled_time_is_zero = true
+=== cancel_idempotent_single_instance ===
+cancel/first_call = false
+cancel/second_call = false
+cancel/third_call = false
+=== cancel_isolated_between_instances ===
+multi/t1_first = false
+multi/t1_second = false
+multi/t2_first = false
+multi/t2_second = false
+=== run_and_super_run_no_side_effect ===
+MyTimerTask-run-executed
+MyTimerTask-run-executed
+run/super_run_no_exception = true
+run/scheduled_time_after_runs = 0
+run/scheduled_time_still_zero = true
+run/cancel_after_runs_first = false
+run/cancel_after_runs_second = false

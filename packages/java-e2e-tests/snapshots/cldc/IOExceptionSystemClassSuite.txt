@@ -1,0 +1,14 @@
+=== default_ctor_and_hierarchy ===
+e1_class=java.io.IOException
+e1_instanceof_Exception=true
+e1_message=null
+e1_toString=java.io.IOException
+=== message_ctor ===
+e2_message=io-test-message
+e2_toString=java.io.IOException: io-test-message
+e3_message=second-message-io-123
+e3_toString=java.io.IOException: second-message-io-123
+=== null_message_ctor ===
+null_msg_class=java.io.IOException
+null_msg_message=null
+null_msg_toString=java.io.IOException

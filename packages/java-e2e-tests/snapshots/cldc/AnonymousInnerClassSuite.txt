@@ -1,0 +1,5 @@
+=== Anonymous Inner Class Test ===
+Callback set
+Callback received: Event 1
+Callback received: Event 2
+Test completed

@@ -1,0 +1,34 @@
+=== iaload null ===
+iaload/caught = java.lang.NullPointerException
+=== laload null ===
+laload/caught = java.lang.NullPointerException
+=== faload null ===
+faload/caught = java.lang.NullPointerException
+=== daload null ===
+daload/caught = java.lang.NullPointerException
+=== aaload null ===
+aaload/caught = java.lang.NullPointerException
+=== baload null ===
+baload/caught = java.lang.NullPointerException
+=== caload null ===
+caload/caught = java.lang.NullPointerException
+=== saload null ===
+saload/caught = java.lang.NullPointerException
+=== iastore null ===
+iastore/caught = java.lang.NullPointerException
+=== lastore null ===
+lastore/caught = java.lang.NullPointerException
+=== fastore null ===
+fastore/caught = java.lang.NullPointerException
+=== dastore null ===
+dastore/caught = java.lang.NullPointerException
+=== aastore null ===
+aastore/caught = java.lang.NullPointerException
+=== bastore null ===
+bastore/caught = java.lang.NullPointerException
+=== castore null ===
+castore/caught = java.lang.NullPointerException
+=== sastore null ===
+sastore/caught = java.lang.NullPointerException
+=== arraylength null ===
+arraylength/caught = java.lang.NullPointerException

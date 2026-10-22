@@ -1,0 +1,14 @@
+=== getWithValidHandle ===
+firstNotNull = true
+secondSameAsFirst = true
+sameAsTarget = true
+=== getWithNullReferent ===
+getReturnsNull = true
+=== clearWithPdPresent ===
+beforeNotNull = true
+beforeSameAsTarget = true
+afterIsNull = true
+afterSecondClearStillNull = true
+=== clearAndGetWithMissingPd ===
+beforeClearGetNull = true
+afterClearGetNull = true

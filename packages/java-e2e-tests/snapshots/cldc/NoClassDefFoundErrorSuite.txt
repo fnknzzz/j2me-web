@@ -1,0 +1,20 @@
+=== defaultCtor ===
+default/class = java.lang.NoClassDefFoundError
+default/message = null
+default/toString = java.lang.NoClassDefFoundError
+=== messageCtor ===
+message/class = java.lang.NoClassDefFoundError
+message/message = no-class-def-found
+message/toString = java.lang.NoClassDefFoundError: no-class-def-found
+=== nullMessageCtor ===
+nullMessage/class = java.lang.NoClassDefFoundError
+nullMessage/message = null
+nullMessage/toString = java.lang.NoClassDefFoundError
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.lang.NoClassDefFoundError
+throwDefault/message = null
+throwDefault/toString = java.lang.NoClassDefFoundError
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.lang.NoClassDefFoundError
+throwMessage/message = after-throw
+throwMessage/toString = java.lang.NoClassDefFoundError: after-throw

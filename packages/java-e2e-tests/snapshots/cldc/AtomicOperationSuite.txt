@@ -1,0 +1,15 @@
+=== Atomic Operation Tests ===
+
+Test 1: Class Initialization
+worker-start
+clinit-start
+clinit-end
+worker-sum=2630
+worker-end
+
+Test 2: Constructor
+constructor-start
+constructor-end
+obj-sum=1305
+
+=== All Tests Passed ===

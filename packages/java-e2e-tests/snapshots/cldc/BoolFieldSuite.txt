@@ -1,0 +1,3 @@
+initial=true
+after_set=false
+condition_passed

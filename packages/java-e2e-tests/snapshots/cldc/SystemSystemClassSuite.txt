@@ -1,0 +1,40 @@
+=== out_field_basic ===
+out_not_null = true
+out_class = java.io.PrintStream
+out_same_instance = true
+SystemSystemClassSuite: println via System.out
+out_println_no_exception = true
+=== time_methods ===
+currentTimeMillis_ge_zero = true
+currentTimeMillis_non_decreasing = true
+nanoTime_diff_ge_zero = true
+=== arraycopy_basic_and_edges ===
+arraycopy_basic_dest = [2, 3, 4, 0, 0]
+arraycopy_zero_length_exception = java.lang.ArrayIndexOutOfBoundsException
+arraycopy_zero_length_array_unchanged = [10, 11, 12]
+arraycopy_zero_length_original = [10, 11, 12]
+arraycopy_null_src_exception = java.lang.NullPointerException
+arraycopy_null_src_dest_after = [100, 200, 300]
+arraycopy_null_src_dest_before = [100, 200, 300]
+arraycopy_null_dest_exception = java.lang.NullPointerException
+=== properties_get_and_set ===
+java_version_not_null = true
+java_vendor_not_null = true
+unknown_property_is_null = true
+null_key_property_is_null = exception:java.lang.NullPointerException
+set_new_prev_null = true
+get_after_set_v1 = value1
+set_existing_prev_v1 = true
+get_after_set_v2 = value2
+set_null_value_prev_null = exception:java.lang.NullPointerException
+get_after_set_null_value_empty_string = exception:java.lang.NullPointerException
+=== getenv_null_key ===
+getenv_null_exception = java.lang.NullPointerException
+=== gc_invocation ===
+gc_invoked = true
+=== identityHashCode_behaviour ===
+hash_same_for_same_object = true
+hash_diff_for_different_objects = true
+hash_null_is_zero = true
+=== exit_noop ===
+before_exit_0 = ok

@@ -1,0 +1,12 @@
+packages:
+  - "crates/j2me-core"
+  - "apps/*"
+  - "packages/*"
+  - "tools/visual-snapshot"
+
+# pnpm 12 requires explicit approval before package lifecycle scripts run.
+# esbuild supplies its platform binary during install; core-js runs its
+# compatibility postinstall step.
+allowBuilds:
+  core-js: true
+  esbuild: true

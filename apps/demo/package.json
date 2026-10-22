@@ -1,0 +1,16 @@
+{
+  "name": "j2me-web-demo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "pnpm --dir ../../crates/j2me-core build && rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "j2me-web": "workspace:*",
+    "@rsbuild/core": "1.6.14"
+  }
+}

@@ -1,0 +1,44 @@
+=== constructors_and_timezones ===
+c1_class=java.util.GregorianCalendar
+c1_tz_id=Asia/Shanghai
+c1_tz_rawOffset=28800000
+c2_tz_not_null=true
+c2_tz_rawOffset=28800000
+c3_tz_before_id=Asia/Shanghai
+c3_tz_after_id=Asia/Shanghai
+c3_tz_after_rawOffset=28800000
+getInstance_tz_null:NullPointerException
+=== time_getters_and_setters ===
+setTimeInMillis_123456789_getTimeInMillis=123456789
+setTimeInMillis_123456789_getTime=123456789
+setTime_Date_7777777_getTimeInMillis=7777777
+setTime_Date_7777777_getTime=7777777
+setTimeInMillis_negative_getTimeInMillis=-1000
+setTimeInMillis_multiple_final=2
+=== field_get_and_set ===
+fields_after_set=2000,1,15,10,30,45
+month_after_set_12=0
+get_unknown_field_0=1
+get_unknown_field_99=exception:java.lang.ArrayIndexOutOfBoundsException
+=== equals_before_after ===
+equals_same_time=true
+equals_diff_time=false
+equals_null=false
+equals_other_class=false
+before_c1_c2=true
+before_c2_c1=false
+after_c1_c2=false
+after_c2_c1=true
+before_equal_times=false
+after_equal_times=false
+before_vs_Date_earlier=false
+before_vs_Date_later=false
+after_vs_Date_earlier=false
+after_vs_Date_later=false
+before_null=false
+after_null=false
+before_other_type=false
+after_other_type=false
+=== compute_methods ===
+compute_before=12345
+compute_after=12345

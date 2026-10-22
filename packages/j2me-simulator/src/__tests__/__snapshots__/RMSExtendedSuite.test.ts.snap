@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RMSExtendedSuite > should test extended RMS methods and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== RMS Extended Methods Test ===")
+[rms] load("rms:ExtendedTest") => null
+[rms] save("rms:ExtendedTest", "<ArrayBuffer:20bytes>")
+[print] println("Opened store")
+[print] println("Initial version: 0")
+[print] println("Size available: 1048576")
+[print] println("Last modified: 1704067200000")
+[rms] save("rms:ExtendedTest", "<ArrayBuffer:36bytes>")
+[print] println("Added record, ID: 1")
+[print] println("Version after add: 1")
+[rms] save("rms:ExtendedTest", "<ArrayBuffer:52bytes>")
+[print] println("Added record, ID: 2")
+[print] println("Num records: 2")
+[print] println("Next record ID: 3")
+[rms] save("rms:ExtendedTest", "<ArrayBuffer:36bytes>")
+[print] println("Deleted record 1")
+[print] println("Num records after delete: 1")
+[print] println("Version after delete: 3")
+[print] println("Correctly threw InvalidRecordIDException")
+[rms] save("rms:ExtendedTest", "<ArrayBuffer:36bytes>")
+[rms] remove("rms:ExtendedTest")
+[print] println("Test completed")"
+`;

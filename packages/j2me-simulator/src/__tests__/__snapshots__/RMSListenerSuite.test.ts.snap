@@ -1,0 +1,34 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RMSListenerSuite > should test record listener and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== RecordListener Test ===")
+[rms] load("rms:ListenerTest") => null
+[rms] save("rms:ListenerTest", "<ArrayBuffer:20bytes>")
+[print] println("Added record listener")
+[rms] save("rms:ListenerTest", "<ArrayBuffer:34bytes>")
+[print] println("Listener: Record added, ID: 1, Store: ListenerTest")
+[print] println("Added record 1, ID: 1")
+[rms] save("rms:ListenerTest", "<ArrayBuffer:48bytes>")
+[print] println("Listener: Record added, ID: 2, Store: ListenerTest")
+[print] println("Added record 2, ID: 2")
+[rms] save("rms:ListenerTest", "<ArrayBuffer:56bytes>")
+[print] println("Listener: Record changed, ID: 1, Store: ListenerTest")
+[print] println("Updated record 1")
+[rms] save("rms:ListenerTest", "<ArrayBuffer:42bytes>")
+[print] println("Listener: Record deleted, ID: 2, Store: ListenerTest")
+[print] println("Deleted record 2")
+[print] println("Removed record listener")
+[rms] save("rms:ListenerTest", "<ArrayBuffer:56bytes>")
+[print] println("Added record 3 after removing listener, ID: 3")
+[print] println("(no listener event should be triggered)")
+[rms] save("rms:ListenerTest", "<ArrayBuffer:56bytes>")
+[rms] remove("rms:ListenerTest")
+[print] println("Test completed")"
+`;

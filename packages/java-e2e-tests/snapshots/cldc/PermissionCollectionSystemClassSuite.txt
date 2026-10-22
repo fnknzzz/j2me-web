@@ -1,0 +1,15 @@
+=== constructor ===
+ctor/not_null = true
+ctor/class_name = com.com.example.PermissionCollectionSystemClassSuite$TestPermissionCollection
+=== readOnly ===
+readOnly/initial = false
+readOnly/after_setReadOnly = true
+readOnly/new_instance = false
+=== add_implies_elements ===
+add/no_exception = true
+implies/false = false
+implies/null = false
+elements/is_null = true
+=== toString ===
+toString/not_null = true
+toString/not_empty = true

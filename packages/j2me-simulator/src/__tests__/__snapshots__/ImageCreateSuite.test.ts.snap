@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImageCreateSuite > should run ImageCreateSuite and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[graphics] createSurface("<surface-2>", 100, 100)
+[graphics] createSurface("<surface-3>", 50, 75)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("ImageCreateSuite started")
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("=== Image Creation ===")
+[graphics] drawRGBA("[10000 pixels]", 0, 0, 100, 100, {"surfaceId":"<surface-2>","color":0,"clipX":0,"clipY":0,"clipWidth":100,"clipHeight":100,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Created mutable image: 100x100")
+[print] println("Is mutable: true")
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-2>","color":16711680,"clipX":0,"clipY":0,"clipWidth":100,"clipHeight":100,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Drew on mutable image")
+[graphics] drawRGBA("[3750 pixels]", 0, 0, 50, 75, {"surfaceId":"<surface-3>","color":0,"clipX":0,"clipY":0,"clipWidth":50,"clipHeight":75,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Created another image: 50x75")
+[graphics] flush("<surface-1>")"
+`;

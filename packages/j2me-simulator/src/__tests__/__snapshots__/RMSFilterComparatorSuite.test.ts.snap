@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RMSFilterComparatorSuite > should test record filter and comparator and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Filter and Comparator Test ===")
+[rms] load("rms:FilterTest") => null
+[rms] save("rms:FilterTest", "<ArrayBuffer:20bytes>")
+[rms] save("rms:FilterTest", "<ArrayBuffer:36bytes>")
+[rms] save("rms:FilterTest", "<ArrayBuffer:52bytes>")
+[rms] save("rms:FilterTest", "<ArrayBuffer:68bytes>")
+[rms] save("rms:FilterTest", "<ArrayBuffer:84bytes>")
+[rms] save("rms:FilterTest", "<ArrayBuffer:100bytes>")
+[print] println("Added 5 records")
+[print] println("Created filtered enumeration (records with 2 or 4)")
+[print] println("Filtered num records: 2")
+[print] println("Filtered record: Record 4")
+[print] println("Filtered record: Record 2")
+[print] println("Created sorted enumeration")
+[print] println("Sorted record: Record 1")
+[print] println("Sorted record: Record 2")
+[print] println("Sorted record: Record 3")
+[print] println("Sorted record: Record 4")
+[print] println("Sorted record: Record 5")
+[print] println("Created filtered and sorted enumeration")
+[print] println("Filtered and sorted num records: 2")
+[print] println("Filtered and sorted record: Record 2")
+[print] println("Filtered and sorted record: Record 4")
+[rms] save("rms:FilterTest", "<ArrayBuffer:100bytes>")
+[rms] remove("rms:FilterTest")
+[print] println("Test completed")"
+`;

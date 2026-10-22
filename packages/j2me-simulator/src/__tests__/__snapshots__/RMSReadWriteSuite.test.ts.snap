@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RMSReadWriteSuite > should run RMSReadWriteSuite and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== RMS Read/Write ===")
+[rms] load("rms:rwStore") => null
+[rms] save("rms:rwStore", "<ArrayBuffer:20bytes>")
+[print] println("Writing record")
+[rms] save("rms:rwStore", "<ArrayBuffer:37bytes>")
+[print] println("Written record ID: 1")
+[print] println("Reading record")
+[print] println("Read data: Test Data")
+[print] println("Record size: 9")
+[print] println("Updating record")
+[rms] save("rms:rwStore", "<ArrayBuffer:35bytes>")
+[print] println("Updated data: Updated")
+[rms] save("rms:rwStore", "<ArrayBuffer:35bytes>")
+[print] println("RMSReadWriteSuite started")
+[rms] remove("rms:rwStore")"
+`;

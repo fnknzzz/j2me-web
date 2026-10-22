@@ -1,0 +1,17 @@
+=== noArgCtor ===
+noArg/className = java.lang.Error
+noArg/message = null
+noArg/toString = java.lang.Error
+=== stringCtor ===
+string/className = java.lang.Error
+string/message = fatal error occurred
+string/toString = java.lang.Error: fatal error occurred
+string/toStringContainsMsg = true
+=== nullStringCtor ===
+nullString/className = java.lang.Error
+nullString/message = null
+nullString/toString = java.lang.Error
+=== thrownError ===
+throw/className = java.lang.Error
+throw/message = thrown error message
+throw/toString = java.lang.Error: thrown error message

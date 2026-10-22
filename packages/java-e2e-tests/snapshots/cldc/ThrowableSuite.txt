@@ -1,0 +1,10 @@
+t0-msg-null
+t0-str-java.lang.Throwable
+t1-msg-hello
+t1-str-java.lang.Throwable: hello
+java.lang.Throwable: hello
+	at com.com.example.ThrowableSuite.main(ThrowableSuite.java:9)
+ex-str-java.lang.Exception: emsg
+cnf-str-java.lang.ClassNotFoundException: x
+ae-str-java.lang.ArithmeticException: y
+sioob-str-java.lang.StringIndexOutOfBoundsException: String index out of range: 5

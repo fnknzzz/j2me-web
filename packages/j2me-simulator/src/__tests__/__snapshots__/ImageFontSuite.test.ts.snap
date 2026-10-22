@@ -1,0 +1,103 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImageFontSuite > should run ImageFontSuite and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] stringWidth("A") => 8
+[font] stringWidth("i") => 8
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] stringWidth("A") => 8
+[font] stringWidth("i") => 8
+[font] stringWidth("Hello") => 40
+[font] stringWidth("ell") => 24
+[font] stringWidth("Hello") => 40
+[font] stringWidth("ell") => 24
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[graphics] createSurface("<surface-2>", 100, 100)
+[graphics] createSurface("<surface-3>", 100, 100)
+[graphics] createSurface("<surface-4>", 100, 100)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Default font face: 0")
+[print] println("Default font style: 0")
+[print] println("Default font size: 0")
+[print] println("Small plain height: 16")
+[print] println("Small plain baseline: 12")
+[print] println("Medium bold height: 16")
+[print] println("Large italic height: 16")
+[print] println("Monospace width 'A': 8")
+[print] println("Monospace width 'i': 8")
+[print] println("Proportional width 'A': 8")
+[print] println("Proportional width 'i': 8")
+[print] println("String width 'Hello': 40")
+[print] println("Substring width 'ell': 24")
+[print] println("Chars width: 40")
+[print] println("Chars width (partial): 24")
+[print] println("Is plain: true")
+[print] println("Is bold: false")
+[print] println("Is italic: false")
+[print] println("Is underlined: false")
+[print] println("Current font face: 0")
+[print] println("Current font style: 1")
+[graphics] drawRGBA("[10000 pixels]", 0, 0, 100, 100, {"surfaceId":"<surface-2>","color":0,"clipX":0,"clipY":0,"clipWidth":100,"clipHeight":100,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Created mutable image: 100x100")
+[print] println("Is mutable: true")
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-2>","color":16711680,"clipX":0,"clipY":0,"clipWidth":100,"clipHeight":100,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Drew on mutable image")
+[graphics] drawRGBA("[10000 pixels]", 0, 0, 100, 100, {"surfaceId":"<surface-3>","color":0,"clipX":0,"clipY":0,"clipWidth":100,"clipHeight":100,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Created RGB image: 100x100")
+[print] println("Is mutable: false")
+[graphics] getPixels("[10000 pixels]", 0, 100, 0, 0, 100, 100, {"surfaceId":"<surface-2>","color":0,"clipX":0,"clipY":0,"clipWidth":100,"clipHeight":100,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawRGBA("[10000 pixels]", 0, 0, 100, 100, {"surfaceId":"<surface-4>","color":0,"clipX":0,"clipY":0,"clipWidth":100,"clipHeight":100,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Created immutable copy: 100x100")
+[print] println("Is mutable: false")
+[graphics] getPixels("[2500 pixels]", 0, 50, 10, 10, 50, 50, {"surfaceId":"<surface-2>","color":0,"clipX":0,"clipY":0,"clipWidth":50,"clipHeight":50,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] createSurface("<surface-5>", 50, 50)
+[graphics] drawRGBA("[2500 pixels]", 0, 0, 50, 50, {"surfaceId":"<surface-5>","color":0,"clipX":0,"clipY":0,"clipWidth":50,"clipHeight":50,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Created region image: 50x50")
+[graphics] getPixels("[2500 pixels]", 0, 50, 10, 10, 50, 50, {"surfaceId":"<surface-2>","color":0,"clipX":0,"clipY":0,"clipWidth":50,"clipHeight":50,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] createSurface("<surface-6>", 50, 50)
+[graphics] createSurface("<surface-7>", 50, 50)
+[graphics] drawRGBA("[2500 pixels]", 0, 0, 50, 50, {"surfaceId":"<surface-6>","color":0,"clipX":0,"clipY":0,"clipWidth":50,"clipHeight":50,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Created transformed image: 50x50")
+[graphics] drawRGBA("[2500 pixels]", 0, 0, 50, 50, {"surfaceId":"<surface-7>","color":0,"clipX":0,"clipY":0,"clipWidth":50,"clipHeight":50,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-7>","color":16711680,"clipX":0,"clipY":0,"clipWidth":50,"clipHeight":50,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-7>","color":16711680,"clipX":0,"clipY":0,"clipWidth":50,"clipHeight":50,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-7>","color":16711680,"clipX":0,"clipY":0,"clipWidth":50,"clipHeight":50,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-7>","color":16711680,"clipX":0,"clipY":0,"clipWidth":50,"clipHeight":50,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawImage("<surface-7>", 10, 10, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawImage("<surface-7>", 70, 10, 24, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawImage("<surface-7>", 130, 10, 17, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawImage("<surface-7>", 10, 70, 6, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawImage("<surface-7>", 70, 70, 10, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawImage("<surface-7>", 130, 70, 3, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawImage("<surface-7>", 10, 130, 36, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawImage("<surface-7>", 70, 130, 40, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawImage("<surface-7>", 130, 130, 33, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawRegion("<surface-7>", 0, 0, 25, 25, 0, 10, 150, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawRegion("<surface-7>", 25, 0, 25, 25, 2, 40, 150, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawRegion("<surface-7>", 0, 25, 25, 25, 1, 70, 150, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] drawRegion("<surface-7>", 25, 25, 25, 25, 5, 100, 150, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":1,"fontSize":0})
+[graphics] getPixels("[2500 pixels]", 0, 50, 0, 0, 50, 50, {"surfaceId":"<surface-7>","color":0,"clipX":0,"clipY":0,"clipWidth":50,"clipHeight":50,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Got RGB data, first pixel: 0")
+[print] println("Got RGB data, last pixel: 0")
+[graphics] flush("<surface-1>")"
+`;

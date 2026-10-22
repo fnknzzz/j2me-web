@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RMSBasicSuite > should run RMSBasicSuite and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== RMS Basic Operations ===")
+[print] println("Opening record store")
+[rms] load("rms:testStore") => null
+[rms] save("rms:testStore", "<ArrayBuffer:20bytes>")
+[print] println("Store name: testStore")
+[print] println("Num records: 0")
+[print] println("Size: 0")
+[print] println("Adding record 1")
+[rms] save("rms:testStore", "<ArrayBuffer:33bytes>")
+[print] println("Record ID: 1")
+[print] println("Adding record 2")
+[rms] save("rms:testStore", "<ArrayBuffer:46bytes>")
+[print] println("Record ID: 2")
+[print] println("Num records after add: 2")
+[rms] save("rms:testStore", "<ArrayBuffer:46bytes>")
+[print] println("Closed record store")
+[print] println("RMSBasicSuite started")
+[rms] remove("rms:testStore")"
+`;

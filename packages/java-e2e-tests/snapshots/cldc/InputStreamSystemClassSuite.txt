@@ -1,0 +1,19 @@
+=== trivialDefaults ===
+trivial/available = 0
+trivial/markSupported = false
+trivial/markReset_exception=IOException
+trivial/skipZero = 0
+trivial/skipPositive = 0
+trivial/skipNegative = 0
+trivial/availableAfterClose = 0
+=== readArrayNullAndEmpty ===
+readNull/exception throws NullPointerException
+readEmpty/nEmpty = 0
+=== readArrayWithoutPD ===
+noPD/readArray = -1
+=== readArrayOffsetLenWithoutPD ===
+offLen/nullDstEx throws NullPointerException
+offLen/valid = -1
+offLen/negOff = exception:IndexOutOfBoundsException
+offLen/negLen = exception:IndexOutOfBoundsException
+offLen/overflow = exception:IndexOutOfBoundsException

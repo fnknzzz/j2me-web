@@ -1,0 +1,20 @@
+=== defaultCtor ===
+default/class = java.io.UTFDataFormatException
+default/message = null
+default/toString = java.io.UTFDataFormatException
+=== messageCtor ===
+message/class = java.io.UTFDataFormatException
+message/message = utf-error
+message/toString = java.io.UTFDataFormatException: utf-error
+=== nullMessageCtor ===
+nullMessage/class = java.io.UTFDataFormatException
+nullMessage/message = null
+nullMessage/toString = java.io.UTFDataFormatException
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.io.UTFDataFormatException
+throwDefault/message = null
+throwDefault/toString = java.io.UTFDataFormatException
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.io.UTFDataFormatException
+throwMessage/message = after-throw
+throwMessage/toString = java.io.UTFDataFormatException: after-throw

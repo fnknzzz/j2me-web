@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RMSMinimalSuite > should run RMSMinimalSuite and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== RMS Minimal Test ===")
+[print] println("Step 1: Opening record store")
+[rms] load("rms:test") => null
+[rms] save("rms:test", "<ArrayBuffer:20bytes>")
+[print] println("Step 2: Record store opened successfully")
+[print] println("Step 3: Closing record store")
+[rms] save("rms:test", "<ArrayBuffer:20bytes>")
+[print] println("Step 4: Record store closed")
+[print] println("Test completed")
+[rms] remove("rms:test")"
+`;

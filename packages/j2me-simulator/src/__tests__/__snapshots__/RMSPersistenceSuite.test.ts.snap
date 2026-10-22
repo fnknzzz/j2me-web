@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RMSPersistenceSuite > should test record store persistence and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== RMS Persistence Test ===")
+[rms] keys() => []
+[print] println("No existing stores")
+[rms] load("rms:PersistTest") => null
+[rms] save("rms:PersistTest", "<ArrayBuffer:20bytes>")
+[print] println("Created new store")
+[rms] save("rms:PersistTest", "<ArrayBuffer:45bytes>")
+[print] println("Added record, ID: 1")
+[rms] save("rms:PersistTest", "<ArrayBuffer:70bytes>")
+[print] println("Added record, ID: 2")
+[print] println("Version: 2")
+[print] println("Last modified: 1704067200000")
+[rms] save("rms:PersistTest", "<ArrayBuffer:70bytes>")
+[print] println("Closed store")
+[rms] keys() => ["rms:PersistTest"]
+[print] println("Stores after create: 1")
+[print] println("Store 0: PersistTest")
+[print] println("Reopened store")
+[print] println("Num records: 2")
+[print] println("Version: 2")
+[print] println("Retrieved record 1: Persistent Data 1")
+[print] println("Retrieved record 2: Persistent Data 2")
+[rms] save("rms:PersistTest", "<ArrayBuffer:70bytes>")
+[rms] remove("rms:PersistTest")
+[print] println("Deleted store")
+[rms] keys() => []
+[print] println("No stores after delete")
+[print] println("Test completed")"
+`;

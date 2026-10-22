@@ -1,0 +1,17 @@
+=== noArgCtor ===
+noArg/className = java.lang.IndexOutOfBoundsException
+noArg/message = null
+noArg/toString = java.lang.IndexOutOfBoundsException
+=== stringCtor ===
+string/className = java.lang.IndexOutOfBoundsException
+string/message = index out of bounds
+string/toString = java.lang.IndexOutOfBoundsException: index out of bounds
+string/toStringContainsMsg = true
+=== nullStringCtor ===
+nullString/className = java.lang.IndexOutOfBoundsException
+nullString/message = null
+nullString/toString = java.lang.IndexOutOfBoundsException
+=== thrownIndexOutOfBounds ===
+throw/className = java.lang.IndexOutOfBoundsException
+throw/message = thrown index oob
+throw/toString = java.lang.IndexOutOfBoundsException: thrown index oob

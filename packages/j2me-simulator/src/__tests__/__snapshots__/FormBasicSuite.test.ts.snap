@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormBasicSuite > should test Form basic functionality and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Form Basic Test ===")
+[print] println("Test: Form basics")
+[print] println("Form title: Test Form")
+[print] println("Updated title: Updated Title")
+[print] println("Form width: 224")
+[print] println("Form height: 320")
+[print] println("Commands added")
+[print] println("Form basic test completed")"
+`;

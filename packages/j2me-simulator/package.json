@@ -1,0 +1,33 @@
+{
+  "name": "@jsjvm/j2me-simulator",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./env": {
+      "types": "./src/env.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "test": "npm run jar:prepare && vitest run",
+    "test:pick": "node scripts/test-pick.js",
+    "jar:build": "node ../../tools/jar-builder/build-jars-from-sources.js --src-dir src/__tests__/j2me-sources --resources-dir src/__tests__/j2me-resources --output-dir src/__tests__/j2me-jars",
+    "jar:build:java-e2e": "npm --prefix ../java-e2e-tests run jar:build-all:cldc",
+    "jar:prepare": "npm run jar:build && npm run jar:extract && npm run jar:build:java-e2e",
+    "jar:extract": "node scripts/extract-jar.js --all"
+  },
+  "dependencies": {
+    "@jsjvm/j2me-core": "workspace:*",
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "@jsjvm/java-e2e-tests": "workspace:*",
+    "@vitest/coverage-v8": "^4.0.15",
+    "typescript": "^7.0.2",
+    "vitest": "^4.0.15"
+  }
+}

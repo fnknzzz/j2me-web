@@ -1,0 +1,705 @@
+{
+  "version": 1,
+  "defaults": {
+    "width": 640,
+    "height": 720,
+    "waitMs": 800,
+    "background": "#ffffff"
+  },
+  "cases": [
+    {
+      "id": "mascot-command-list-board",
+      "jar": "jars/MascotCommandListBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "Mascot Capsule public rendering path: bind, command lists, primitives, affine/light state, flush, and release",
+      "tags": [
+        "mascot"
+      ],
+      "stable": true
+    },
+    {
+      "id": "mascot-projection-clip",
+      "jar": "jars/MascotProjectionClipMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "Mascot Capsule command-list field-of-view and width-height projections, followed by center and clip coordinates",
+      "tags": [
+        "mascot"
+      ],
+      "stable": true
+    },
+    {
+      "id": "mascot-primitive-material-board",
+      "jar": "jars/MascotPrimitiveMaterialBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "Mascot primitive materials: normal, half/add blend, texture, color key, and normal-based lighting",
+      "tags": [
+        "mascot",
+        "pending-reference"
+      ],
+      "stable": true
+    },
+    {
+      "id": "mascot-command-state-board",
+      "jar": "jars/MascotCommandStateBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "Mascot command-list state: texture index, command light, toon threshold, and point sprites",
+      "tags": [
+        "mascot",
+        "pending-reference"
+      ],
+      "stable": true
+    },
+    {
+      "id": "graphics-primitives-board",
+      "jar": "jars/GraphicsPrimitivesBoardMIDlet.jar",
+      "width": 640,
+      "height": 864,
+      "description": "graphics primitives board for rasterization, stroke style, color, grayscale, and drawRGB",
+      "stable": true
+    },
+    {
+      "id": "graphics-clip-translate-board",
+      "jar": "jars/GraphicsClipTranslateBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "graphics api board for clipRect, setClip, and translate",
+      "stable": true
+    },
+    {
+      "id": "graphics-state-board",
+      "jar": "jars/GraphicsStateBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "graphics state board for color, grayscale, stroke, translate, clip, font, and display color getters",
+      "stable": true
+    },
+    {
+      "id": "image-operations-board",
+      "jar": "jars/ImageOperationsBoardMIDlet.jar",
+      "width": 640,
+      "height": 864,
+      "description": "image api board for creation, drawImage anchors, drawRGB, copy, mutable offscreen, text, clip, translate, and composition",
+      "stable": true
+    },
+    {
+      "id": "image-get-rgb-board",
+      "jar": "jars/ImageGetRgbBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "image api board for getRGB readback and round-trip rendering",
+      "stable": true
+    },
+    {
+      "id": "image-resource-display-board",
+      "jar": "jars/ImageResourceDisplayMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "image api board for static png and gif resource decoding",
+      "stable": true
+    },
+    {
+      "id": "image-region-transform-board",
+      "jar": "jars/ImageRegionTransformBoardMIDlet.jar",
+      "width": 640,
+      "height": 800,
+      "description": "image api board for drawRegion full-image and partial-region transforms",
+      "stable": true
+    },
+    {
+      "id": "font-board",
+      "jar": "jars/FontBoardMIDlet.jar",
+      "width": 480,
+      "height": 1320,
+      "description": "font api board for text drawing, metrics, anchors, faces, styles, and sizes",
+      "stable": true
+    },
+    {
+      "id": "nokia-direct-graphics-board",
+      "jar": "jars/NokiaDirectGraphicsMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "nokia api static directgraphics overview board",
+      "stable": true
+    },
+    {
+      "id": "nokia-direct-pixels-roundtrip-board",
+      "jar": "jars/NokiaDirectPixelsRoundtripBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "nokia api board for drawPixels, getPixels, alpha pixel formats, and transform readback",
+      "stable": true
+    },
+    {
+      "id": "graphics-copy-area-board",
+      "jar": "jars/GraphicsCopyAreaBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "graphics api board for copyArea overlap, clip/translate, and multi-anchor",
+      "stable": true
+    },
+    {
+      "id": "image-create-variants-board",
+      "jar": "jars/ImageCreateVariantsBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "image api board for createImage from byte array and sub-region with transform",
+      "stable": true
+    },
+    {
+      "id": "nokia-direct-polygon-board",
+      "jar": "jars/NokiaDirectPolygonBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "nokia api board for polygon and triangle variants with offsets, concave, and transparency",
+      "stable": true
+    },
+    {
+      "id": "nokia-direct-pixels-byte-board",
+      "jar": "jars/NokiaDirectPixelsByteBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "nokia api board for byte pixel format drawPixels and getPixels coverage",
+      "stable": true
+    },
+    {
+      "id": "image-surface-reload-after-double-load",
+      "jar": "jars/ImageSurfaceReloadSuite.jar",
+      "width": 240,
+      "height": 320,
+      "description": "Regression: Image.createImage after double load_state should not white-screen",
+      "stable": true,
+      "tags": [
+        "save-load"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "ms": 1000
+        },
+        {
+          "action": "save"
+        },
+        {
+          "action": "wait",
+          "ms": 1500
+        },
+        {
+          "action": "load"
+        },
+        {
+          "action": "keyPress",
+          "key": "5"
+        },
+        {
+          "action": "wait",
+          "ms": 300
+        }
+      ]
+    },
+    {
+      "id": "tile-map-repro",
+      "jar": "jars/TileMapRepro.jar",
+      "width": 240,
+      "height": 320,
+      "description": "TileMap rendering with game loop - repro for save-load tile corruption",
+      "stable": true,
+      "tags": [
+        "save-load"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "ms": 200
+        },
+        {
+          "action": "save"
+        },
+        {
+          "action": "load"
+        },
+        {
+          "action": "keyPress",
+          "key": "5"
+        },
+        {
+          "action": "wait",
+          "ms": 300
+        }
+      ]
+    },
+    {
+      "id": "derived-sprite-restore",
+      "jar": "jars/DerivedSpriteRestoreMIDlet.jar",
+      "width": 240,
+      "height": 320,
+      "description": "Regression: derived sprites (createImage region from resource source) not rendered after save-load",
+      "stable": true,
+      "tags": [
+        "save-load"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "ms": 200
+        },
+        {
+          "action": "save"
+        },
+        {
+          "action": "load"
+        },
+        {
+          "action": "wait",
+          "ms": 300
+        }
+      ]
+    },
+    {
+      "id": "scene-switch-restore",
+      "jar": "jars/SceneSwitchRestoreMIDlet.jar",
+      "width": 240,
+      "height": 320,
+      "description": "Regression: overworld save → keyPress enters room (destroy+rebuild sprites) → load → sprites not rendered",
+      "stable": true,
+      "tags": [
+        "save-load"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "ms": 200
+        },
+        {
+          "action": "save"
+        },
+        {
+          "action": "keyPress",
+          "key": "5"
+        },
+        {
+          "action": "wait",
+          "ms": 200
+        },
+        {
+          "action": "load"
+        },
+        {
+          "action": "wait",
+          "ms": 200
+        },
+        {
+          "action": "screenshot"
+        },
+        {
+          "action": "keyPress",
+          "key": "5"
+        },
+        {
+          "action": "wait",
+          "ms": 200
+        }
+      ]
+    },
+    {
+      "id": "packed-sprite-restore",
+      "jar": "jars/PackedSpriteRestoreMIDlet.jar",
+      "width": 240,
+      "height": 320,
+      "description": "Regression: sprites from packed data (pic.dat, not JarResource) not rendered after save → scene switch → load. Source surface restored via DRAW_RGBA pixel snapshot, not restorePendingResourceImages.",
+      "stable": true,
+      "tags": [
+        "save-load"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "ms": 200
+        },
+        {
+          "action": "save"
+        },
+        {
+          "action": "keyPress",
+          "key": "5"
+        },
+        {
+          "action": "wait",
+          "ms": 200
+        },
+        {
+          "action": "load"
+        },
+        {
+          "action": "wait",
+          "ms": 200
+        }
+      ]
+    },
+    {
+      "id": "incremental-menu-restore",
+      "jar": "jars/IncrementalMenuRestoreMIDlet.jar",
+      "width": 240,
+      "height": 320,
+      "description": "Regression: Canvas menu repaint after load_state draws only an incremental strip and depends on restored surface 0 backbuffer",
+      "stable": true,
+      "tags": [
+        "save-load"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "ms": 300
+        },
+        {
+          "action": "save"
+        },
+        {
+          "action": "keyPress",
+          "key": "5"
+        },
+        {
+          "action": "wait",
+          "ms": 200
+        },
+        {
+          "action": "load"
+        }
+      ]
+    },
+    {
+      "id": "stale-surface-restore",
+      "jar": "jars/StaleSurfaceRestoreMIDlet.jar",
+      "width": 240,
+      "height": 320,
+      "description": "Regression: save → create ghost surface (different size) → load (next_surface_id restored) → new Image allocation collides with ghost → wrong surface dimensions",
+      "stable": true,
+      "tags": [
+        "save-load"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "ms": 200
+        },
+        {
+          "action": "save"
+        },
+        {
+          "action": "keyPress",
+          "key": "5"
+        },
+        {
+          "action": "wait",
+          "ms": 300
+        },
+        {
+          "action": "load"
+        },
+        {
+          "action": "keyPress",
+          "key": "0"
+        },
+        {
+          "action": "wait",
+          "ms": 300
+        }
+      ]
+    },
+    {
+      "id": "m3g-immediate-mode-board",
+      "jar": "jars/M3GImmediateModeBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "M3G immediate-mode rendering: flat triangles with explicit camera, vertex colors, perspective/parallel cubes, explicit indices, multi-strip, byte positions, background clear",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-transform-board",
+      "jar": "jars/M3GTransformBoardMIDlet.jar",
+      "width": 640,
+      "height": 800,
+      "description": "M3G transform and projection: identity, translate, scale, rotate, TRS composite, postMultiply, scaleBias, perspective/parallel FOV, camera transforms, generic projection",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-lighting-board",
+      "jar": "jars/M3GLightingBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "M3G lighting: ambient, directional, omni, spot, multi-light, colored light, material diffuse/emissive/specular, vertex color tracking, shininess",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-texture-board",
+      "jar": "jars/M3GTextureBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "M3G texturing: RGB/RGBA/Luminance/LuminanceAlpha Image2D, blend functions (REPLACE/MODULATE/DECAL/BLEND), wrap REPEAT/CLAMP, filter NEAREST/LINEAR",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-scene-graph-board",
+      "jar": "jars/M3GSceneGraphBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "M3G scene graph: render(World), render(Node), Mesh, Group, nested groups, node transforms, renderingEnable, scope filter, World background, multi-submesh",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-appearance-mode-board",
+      "jar": "jars/M3GAppearanceModeBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "M3G appearance modes: PolygonMode culling/winding/shading, CompositingMode alpha/alphaAdd/modulate blending, depth test, alpha threshold",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-sprite3d-board",
+      "jar": "jars/M3GSprite3DBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G Sprite3D: scaled/unscaled, crop, translation, rotation (billboard), RGBA image, multiple sprites in group",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-morphing-mesh-board",
+      "jar": "jars/M3GMorphingMeshBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G MorphingMesh: single target at 0/0.5/0.75/1.0 weight, two targets blend, morph with rotation, zero weights (base)",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-skinned-mesh-board",
+      "jar": "jars/M3GSkinnedMeshBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G SkinnedMesh: identity skeleton, rotated/translated/scaled bone, two bones, deep hierarchy, mesh rotation, vertex colors",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-advanced-features-board",
+      "jar": "jars/M3GAdvancedFeaturesBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "M3G advanced: Fog linear/exponential/colored/dense, Background image, immediate scope filter, vertex alpha blend, depthOffset state, colorWrite off, multi-texture units, Transform.transform(VA), scope=-1 render",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-viewport-state-board",
+      "jar": "jars/M3GViewportStateBoardMIDlet.jar",
+      "width": 640,
+      "height": 540,
+      "description": "M3G viewport and Graphics state: viewport origin/size, clip, translate, camera reset, background clear clipping, repeated bind/release",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-release-target-flush-board",
+      "jar": "jars/M3GReleaseTargetFlushBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G Graphics3D releaseTarget flush ordering probe against LCDUI drawing before, during, and after a bound target",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-depth-culling-alpha-board",
+      "jar": "jars/M3GDepthCullingAlphaBoardMIDlet.jar",
+      "width": 640,
+      "height": 540,
+      "description": "M3G depth/culling/alpha: winding, culling modes, depth ordering, depth test/write, alpha blend/add/threshold",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-texture-background-board",
+      "jar": "jars/M3GTextureBackgroundBoardMIDlet.jar",
+      "width": 640,
+      "height": 540,
+      "description": "M3G texture/background: texture transform, UV scaleBias, wrapping, blend color, background color/image/crop/clear enable",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-texture-missing-paths-board",
+      "jar": "jars/M3GTextureMissingPathsBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G general texture paths: textured triangle, indexed quad with unused vertex, repeated-triangle indices, texture translate/rotate, REPEAT plus LINEAR",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-mutable-image2d-texture-board",
+      "jar": "jars/M3GMutableImage2DTextureBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G mutable Image2D texture invalidation and Image2D render target reuse as Texture2D",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-image2d-set-image-board",
+      "jar": "jars/M3GImage2DSetImageBoardMIDlet.jar",
+      "width": 640,
+      "height": 720,
+      "description": "M3G Image2D reference switches: Texture2D.setImage, Sprite3D.setImage, and Background.setImage reuse object paths with new image resources",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-deformation-attributes-board",
+      "jar": "jars/M3GDeformationAttributesBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G deformation attributes: MorphingMesh and SkinnedMesh texture coordinates and normals, morphed target normals, material ambient color",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-scene-sprite-paths-board",
+      "jar": "jars/M3GSceneSpriteMissingPathsBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G scene and sprite paths: Sprite3D negative crop mirroring and active camera transforms inherited through parent groups",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-retained-state-board",
+      "jar": "jars/M3GRetainedStateBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G retained Graphics3D state: render(World) leaves active camera and World lights for subsequent queries and immediate-mode rendering",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-sprite-crop-flip-board",
+      "jar": "jars/M3GSpriteCropFlipBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G Sprite3D crop and flip: normal crop, horizontal/vertical/both-axis mirroring, and out-of-bounds transparent crop",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-skinned-bind-pose-board",
+      "jar": "jars/M3GSkinnedBindPoseBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G SkinnedMesh bind pose: pre-bind transforms remain neutral, post-bind deltas deform, nested hierarchy",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-animation-board",
+      "jar": "jars/M3GAnimationBoardMIDlet.jar",
+      "width": 800,
+      "height": 480,
+      "description": "M3G animation: Object3D.animate, translation, scale, quaternion orientation, spline, squad, material color, visibility, morph weights, camera FOV",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-loader-board",
+      "jar": "jars/M3GLoaderBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G Loader: parse and render .m3g files (single triangle, vertex colors, World+Camera, Material+Light, cube, error handling)",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-loader-combined-board",
+      "jar": "jars/M3GLoaderCombinedBoardMIDlet.jar",
+      "width": 640,
+      "height": 480,
+      "description": "M3G Loader combined/edge cases: texture chain, multi-submesh, nested groups, full appearance, zlib compressed, empty world, scale/bias",
+      "tags": [
+        "m3g"
+      ],
+      "stable": true
+    },
+    {
+      "id": "m3g-mission-map-board",
+      "jar": "jars/M3GMissionMapBoardMIDlet.jar",
+      "width": 240,
+      "height": 320,
+      "description": "Bio3D mission map: external effects.png reference, retained Mesh render, texture atlas highlight",
+      "tags": [
+        "m3g"
+      ],
+      "steps": [
+        {
+          "action": "wait",
+          "ms": 200
+        }
+      ],
+      "stable": true
+    }
+  ]
+}

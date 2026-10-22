@@ -1,0 +1,20 @@
+=== defaultCtor ===
+default/class = java.lang.ClassCastException
+default/message = null
+default/toString = java.lang.ClassCastException
+=== messageCtor ===
+message/class = java.lang.ClassCastException
+message/message = class-cast-error
+message/toString = java.lang.ClassCastException: class-cast-error
+=== nullMessageCtor ===
+nullMessage/class = java.lang.ClassCastException
+nullMessage/message = null
+nullMessage/toString = java.lang.ClassCastException
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.lang.ClassCastException
+throwDefault/message = null
+throwDefault/toString = java.lang.ClassCastException
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.lang.ClassCastException
+throwMessage/message = after-throw
+throwMessage/toString = java.lang.ClassCastException: after-throw

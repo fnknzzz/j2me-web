@@ -1,0 +1,23 @@
+=== constructors ===
+ctor/default/notNull = true
+ctor/lock/notNull = true
+=== writeIntAndCharArray ===
+writeIntChar/buffer = ABXYZ
+writeIntChar/length = 5
+=== writeCharArrayOffsetLength ===
+writeCII/normal/buffer = bc
+writeCII/len0/before = 2
+writeCII/len0/after = 2
+=== writeStringVariants ===
+writeString/normal/buffer = ABC2345
+writeString/empty/buffer = 
+writeString/negOff throws java.lang.StringIndexOutOfBoundsException
+writeString/negLen throws java.lang.StringIndexOutOfBoundsException
+writeString/overflow throws java.lang.StringIndexOutOfBoundsException
+writeString/null throws java.lang.NullPointerException
+=== flushAndClose ===
+flushClose/initialFlush = 0
+flushClose/initialClosed = false
+flushClose/afterFlush = 2
+flushClose/afterClose = true
+flushClose/closeTwice = OK

@@ -1,0 +1,8 @@
+empty-true
+peek-c
+search-b-2
+search-x--1
+pop-c
+pop-b
+pop-a
+empty2-true

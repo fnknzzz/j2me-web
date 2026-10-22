@@ -1,0 +1,61 @@
+=== basic_primitives ===
+available_before:33
+readBoolean:true
+readByte:-128
+readUnsignedByte:255
+readShort:258
+readUnsignedShort:90
+readChar:65
+readInt:16909060
+readLong:1234605616436508552
+readFloat:2.5
+readDouble:3.25
+available_after:0
+=== read_char_and_arrays ===
+read_single:65
+read_array_len:3 values:66,67,68
+read_array_off_len:3 values:0,65,66,67,0
+=== skip_and_mark ===
+markSupported:true
+read_before_reset:10
+read_after_reset:10
+skip_long:2 next:40
+skipBytes_zero:0
+skipBytes_over:1
+=== null_stream_defaults ===
+null_available_ex:java.lang.NullPointerException
+null_skip_long_ex:java.lang.NullPointerException
+null_skipBytes_ex:java.lang.NullPointerException
+null_mark_reset_close_ex:java.lang.NullPointerException
+null_readBoolean_ex:java.lang.NullPointerException
+null_read_ex:java.lang.NullPointerException
+=== eof_exceptions ===
+eof_readBoolean:EOFException
+eof_readByte:EOFException
+eof_readUnsignedByte:EOFException
+eof_readShort:EOFException
+eof_readUnsignedShort:EOFException
+eof_readChar:EOFException
+eof_readInt:EOFException
+eof_readLong:EOFException
+eof_readFloat:EOFException
+eof_readDouble:EOFException
+eof_readFully_array:EOFException
+eof_readFully_off_len:EOFException
+eof_readUTF_len_only:EOFException
+=== read_fully_variants ===
+readFully_ok:10,20,30,40
+readFully_off_len_ok:0,10,20,30,40,0
+readFully_null_buf_NPE
+readFully_null_off_len_ex:java.lang.NullPointerException
+=== read_utf_variants ===
+readUTF_ascii:ABC
+readUTF_2bytes_len:1
+readUTF_3bytes_len:1
+utf_bad_2bytes_short:UTFDataFormatException
+utf_bad_3bytes_short:UTFDataFormatException
+utf_bad_continuation:UTFDataFormatException
+utf_bad_start:UTFDataFormatException
+=== static_read_utf ===
+static_readUTF_ok:XYZ
+static_readUTF_null_ex:java.lang.NullPointerException

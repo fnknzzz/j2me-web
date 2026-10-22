@@ -1,0 +1,34 @@
+{
+  "name": "@jsjvm/j2me-sound-player",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Sound player for J2ME supported audio formats (MIDI, WAV, MP3, etc.)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rimraf dist",
+    "test": "vitest run --passWithNoTests",
+    "soundfont:build": "node scripts/build-soundfont-families.mjs",
+    "soundfont:source": "Source GeneralUser.sf2 is deliberately not included; place it at assets/source/GeneralUser.sf2 before running soundfont:build"
+  },
+  "dependencies": {
+    "spessasynth_core": "4.3.22",
+    "spessasynth_lib": "4.3.14"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "rimraf": "^6.0.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.0.15"
+  },
+  "keywords": [
+    "j2me",
+    "midi",
+    "audio",
+    "soundfont",
+    "player"
+  ],
+  "author": "",
+  "license": "MIT"
+}

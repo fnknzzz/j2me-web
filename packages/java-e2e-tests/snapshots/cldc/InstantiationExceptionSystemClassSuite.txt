@@ -1,0 +1,14 @@
+=== default_ctor_and_hierarchy ===
+e1_class=java.lang.InstantiationException
+e1_instanceof_Exception=true
+e1_message=null
+e1_toString=java.lang.InstantiationException
+=== message_ctor ===
+e2_message=instantiation-test-message
+e2_toString=java.lang.InstantiationException: instantiation-test-message
+e3_message=second-message-instantiation-123
+e3_toString=java.lang.InstantiationException: second-message-instantiation-123
+=== null_message_ctor ===
+null_msg_class=java.lang.InstantiationException
+null_msg_message=null
+null_msg_toString=java.lang.InstantiationException

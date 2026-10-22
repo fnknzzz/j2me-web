@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormStringItemSuite > should test StringItem and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Form StringItem Test ===")
+[print] println("Test: StringItem")
+[print] println("StringItem label: Label:")
+[print] println("StringItem text: Text content")
+[print] println("Updated text: Updated text")
+[print] println("Updated label: New Label:")
+[print] println("Form StringItem test completed")"
+`;

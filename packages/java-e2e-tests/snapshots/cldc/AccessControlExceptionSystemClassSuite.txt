@@ -1,0 +1,19 @@
+=== ctor_msg_only ===
+msg_only_e1_class=java.security.AccessControlException
+msg_only_e1_message=denied
+msg_only_e1_toString=java.security.AccessControlException: denied
+msg_only_e1_perm_null = true
+msg_only_e2_message=null
+msg_only_e2_toString=java.security.AccessControlException
+msg_only_e2_perm_null = true
+=== ctor_msg_and_permission ===
+msg_perm_class=java.security.AccessControlException
+msg_perm_message=no access
+msg_perm_toString=java.security.AccessControlException: no access
+msg_perm_getPermission_not_null = true
+msg_perm_getPermission_class=com.com.example.AccessControlExceptionSystemClassSuite$MyPermission
+msg_perm_getPermission_name=TEST_PERM
+msg_perm_same_instance = true
+=== ctor_msg_and_null_permission ===
+msg_nullPerm_message=no access
+msg_nullPerm_perm_null = true

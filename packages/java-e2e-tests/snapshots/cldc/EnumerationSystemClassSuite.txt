@@ -1,0 +1,31 @@
+=== reflection_and_metadata ===
+enum_class_name=java.util.Enumeration
+enum_simple_name=Enumeration
+enum_superclass=null
+enum_is_interface=true
+forName_same_class=true
+=== instantiation_errors ===
+newInstance_InstantiationException
+=== implementation_and_iteration ===
+ArrayEnumeration_hasMore name=nonEmpty,index=0,len=2,has=true
+ArrayEnumeration_next name=nonEmpty,index=0
+nonEmpty_elem_0=A
+ArrayEnumeration_hasMore name=nonEmpty,index=1,len=2,has=true
+ArrayEnumeration_next name=nonEmpty,index=1
+nonEmpty_elem_1=B
+ArrayEnumeration_hasMore name=nonEmpty,index=2,len=2,has=false
+ArrayEnumeration_hasMore name=nonEmpty,index=2,len=2,has=false
+nonEmpty_hasMore_after = false
+ArrayEnumeration_hasMore name=empty,index=0,len=0,has=false
+empty_hasMore_initial = false
+ArrayEnumeration_next name=empty,index=0
+empty_nextElement_other=java.lang.ArrayIndexOutOfBoundsException
+=== instanceof_and_null ===
+e_instanceof_Enumeration=true
+objEnum_instanceof_Enumeration=true
+objPlain_instanceof_Enumeration=false
+null_instanceof_Enumeration=false
+=== cast_and_exceptions ===
+cast_ok_same_instance=true
+cast_null_result_is_null=true
+cast_plain_to_enum:ClassCastException

@@ -1,0 +1,20 @@
+=== defaultCtor ===
+default/class = java.lang.NullPointerException
+default/message = null
+default/toString = java.lang.NullPointerException
+=== messageCtor ===
+message/class = java.lang.NullPointerException
+message/message = null-pointer-error
+message/toString = java.lang.NullPointerException: null-pointer-error
+=== nullMessageCtor ===
+nullMessage/class = java.lang.NullPointerException
+nullMessage/message = null
+nullMessage/toString = java.lang.NullPointerException
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.lang.NullPointerException
+throwDefault/message = null
+throwDefault/toString = java.lang.NullPointerException
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.lang.NullPointerException
+throwMessage/message = after-throw
+throwMessage/toString = java.lang.NullPointerException: after-throw

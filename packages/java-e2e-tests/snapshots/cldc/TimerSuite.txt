@@ -1,0 +1,6 @@
+ctor-ok
+cancel-before-schedule-false
+cancel-after-schedule-true
+fixedrate-cancel-true
+tick-1
+done

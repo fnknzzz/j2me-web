@@ -1,0 +1,17 @@
+=== noArgCtor ===
+noArg/className = java.lang.IllegalThreadStateException
+noArg/message = null
+noArg/toString = java.lang.IllegalThreadStateException
+=== stringCtor ===
+string/className = java.lang.IllegalThreadStateException
+string/message = illegal thread state
+string/toString = java.lang.IllegalThreadStateException: illegal thread state
+string/toStringContainsMsg = true
+=== nullStringCtor ===
+nullString/className = java.lang.IllegalThreadStateException
+nullString/message = null
+nullString/toString = java.lang.IllegalThreadStateException
+=== thrownByThreadState ===
+thread/className = java.lang.IllegalThreadStateException
+thread/message = null
+thread/toString = java.lang.IllegalThreadStateException

@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MediaPlayerListenerSuite > should test player listener functionality and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Media Player Listener Test ===")
+[print] println("Test: Player listener")
+[media] createPlayer({"locator":"/music.mid"})
+[print] println("Player listener added")
+[print] println("Player realized")
+[print] println("Player listener removed")
+[media] close()
+[print] println("Media player listener test completed")"
+`;

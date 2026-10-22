@@ -1,0 +1,13 @@
+=== noArgCtor ===
+noArg/className = java.lang.IllegalAccessException
+noArg/message = null
+noArg/toString = java.lang.IllegalAccessException
+=== stringCtor ===
+string/className = java.lang.IllegalAccessException
+string/message = illegal access
+string/toString = java.lang.IllegalAccessException: illegal access
+string/toStringContainsMsg = true
+=== nullStringCtor ===
+nullString/className = java.lang.IllegalAccessException
+nullString/message = null
+nullString/toString = java.lang.IllegalAccessException

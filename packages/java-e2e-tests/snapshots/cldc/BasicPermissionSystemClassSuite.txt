@@ -1,0 +1,26 @@
+=== ctor_and_getActions ===
+ctor_p1_name=read
+ctor_p2_name=read
+ctor_p3_name=write
+ctor_p1_actions=
+ctor_p2_actions=
+ctor_p3_actions=
+=== equals_and_hashCode ===
+eq_a1_a2 = true
+eq_a1_b = false
+eq_a1_otherSubclass = false
+eq_a1_null = false
+eq_a1_string = false
+hash_a1 = 3496342
+hash_a2 = 3496342
+hash_b = 113399775
+hash_a1_eq_a2 = true
+hash_a1_eq_b = false
+=== implies_behavior ===
+implies_r1_r2 = true
+implies_r1_w = false
+implies_r1_null = false
+implies_r1_dummy = false
+=== newPermissionCollection ===
+npc_not_null = true
+npc_class_name=java.security.BasicPermissionCollection

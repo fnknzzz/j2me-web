@@ -1,0 +1,23 @@
+=== noArgCtor ===
+noArg/className = java.lang.ArrayIndexOutOfBoundsException
+noArg/message = null
+noArg/toString = java.lang.ArrayIndexOutOfBoundsException
+=== intCtorPositive ===
+intPos/message = Array index out of range: 5
+intPos/toString = java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 5
+intPos/toStringContainsIndex = true
+=== intCtorNegative ===
+intNeg/message = Array index out of range: -3
+intNeg/toString = java.lang.ArrayIndexOutOfBoundsException: Array index out of range: -3
+intNeg/toStringContainsIndex = true
+=== stringCtor ===
+string/message = index out of range
+string/toString = java.lang.ArrayIndexOutOfBoundsException: index out of range
+string/toStringContainsMsg = true
+=== nullStringCtor ===
+nullString/message = null
+nullString/toString = java.lang.ArrayIndexOutOfBoundsException
+=== thrownByArrayAccess ===
+arrayAccess/className = java.lang.ArrayIndexOutOfBoundsException
+arrayAccess/message = 5
+arrayAccess/toString = java.lang.ArrayIndexOutOfBoundsException: 5

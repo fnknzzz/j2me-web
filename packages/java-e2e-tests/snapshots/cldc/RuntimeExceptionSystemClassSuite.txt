@@ -1,0 +1,27 @@
+=== defaultCtor ===
+default/class = java.lang.RuntimeException
+default/message = null
+default/toString = java.lang.RuntimeException
+=== messageCtor ===
+message/class = java.lang.RuntimeException
+message/message = runtime-error
+message/toString = java.lang.RuntimeException: runtime-error
+=== nullMessageCtor ===
+nullMessage/class = java.lang.RuntimeException
+nullMessage/message = null
+nullMessage/toString = java.lang.RuntimeException
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.lang.RuntimeException
+throwDefault/message = null
+throwDefault/toString = java.lang.RuntimeException
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.lang.RuntimeException
+throwMessage/message = after-throw-runtime
+throwMessage/toString = java.lang.RuntimeException: after-throw-runtime
+=== multiInstance ===
+multi/e1Class = java.lang.RuntimeException
+multi/e2Class = java.lang.RuntimeException
+multi/e1Message = first-instance
+multi/e2Message = second-instance
+multi/sameInstance = false
+multi/messagesEqual = false

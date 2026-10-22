@@ -1,0 +1,38 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RMSDeleteSuite > should test record deletion and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== RMS Delete Test ===")
+[rms] load("rms:DeleteTest") => null
+[rms] save("rms:DeleteTest", "<ArrayBuffer:20bytes>")
+[print] println("Opened store")
+[rms] save("rms:DeleteTest", "<ArrayBuffer:36bytes>")
+[print] println("Added record 1, ID: 1")
+[rms] save("rms:DeleteTest", "<ArrayBuffer:52bytes>")
+[print] println("Added record 2, ID: 2")
+[rms] save("rms:DeleteTest", "<ArrayBuffer:68bytes>")
+[print] println("Added record 3, ID: 3")
+[print] println("Num records: 3")
+[print] println("Version before delete: 3")
+[rms] save("rms:DeleteTest", "<ArrayBuffer:52bytes>")
+[print] println("Deleted record 2")
+[print] println("Num records after delete: 2")
+[print] println("Version after delete: 4")
+[print] println("Retrieved record 1: Record 1")
+[print] println("Retrieved record 3: Record 3")
+[print] println("Correctly threw InvalidRecordIDException")
+[rms] save("rms:DeleteTest", "<ArrayBuffer:52bytes>")
+[print] println("Closed store")
+[print] println("Reopened store")
+[print] println("Num records after reopen: 2")
+[print] println("Correctly threw InvalidRecordIDException after reopen")
+[rms] save("rms:DeleteTest", "<ArrayBuffer:52bytes>")
+[rms] remove("rms:DeleteTest")
+[print] println("Test completed")"
+`;

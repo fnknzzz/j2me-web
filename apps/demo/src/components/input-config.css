@@ -1,0 +1,629 @@
+.j2me-input-config-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10000;
+  display: flex;
+  width: min(920px, calc(100vw - 32px));
+  max-height: min(820px, calc(100vh - 32px));
+  overflow: hidden;
+  flex-direction: column;
+  color: #f7f9ff;
+  background: #121827;
+  border: 1px solid #2a3449;
+  border-radius: 16px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.62);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  transform: translate(-50%, -50%);
+}
+
+.j2me-input-config-panel button {
+  font: inherit;
+}
+
+.j2me-config-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 18px 22px 14px;
+  background: #171f31;
+  border-bottom: 1px solid #293349;
+}
+
+.j2me-config-header h3,
+.j2me-keyboard-heading h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 650;
+}
+
+.j2me-config-header p,
+.j2me-keyboard-heading p {
+  margin: 5px 0 0;
+  color: #8f9bb0;
+  font-size: 12px;
+}
+
+.j2me-config-close {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  color: #9aa5b8;
+  background: transparent;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.j2me-config-close:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.j2me-input-mode-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 12px 22px;
+  background: #171f31;
+}
+
+.j2me-input-mode {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  color: #9ba7b9;
+  text-align: left;
+  background: #101625;
+  border: 1px solid #2a3449;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+
+.j2me-input-mode:hover {
+  background: #192238;
+}
+
+.j2me-input-mode[data-mode="keyboard"].active {
+  color: #dceeff;
+  background: rgba(59, 130, 246, 0.14);
+  border-color: #3b82f6;
+  box-shadow: inset 0 0 0 1px rgba(59, 130, 246, 0.22);
+}
+
+.j2me-input-mode[data-mode="gamepad"].active {
+  color: #fff0dc;
+  background: rgba(249, 115, 22, 0.14);
+  border-color: #f97316;
+  box-shadow: inset 0 0 0 1px rgba(249, 115, 22, 0.22);
+}
+
+.j2me-mode-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.j2me-input-mode span:last-child {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.j2me-input-mode strong {
+  color: inherit;
+  font-size: 13px;
+}
+
+.j2me-input-mode small {
+  overflow: hidden;
+  margin-top: 2px;
+  color: #7f8a9d;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.j2me-config-content {
+  display: grid;
+  min-height: 0;
+  overflow-y: auto;
+  grid-template-columns: minmax(0, 1fr) 270px;
+}
+
+.j2me-phone-key-area {
+  min-width: 0;
+  padding: 20px 22px 24px;
+}
+
+.j2me-keyboard-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 17px;
+}
+
+.j2me-binding-legend {
+  display: flex;
+  flex-shrink: 0;
+  gap: 6px;
+}
+
+.j2me-phone-keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.j2me-phone-key-group {
+  min-width: 0;
+  padding: 12px;
+  background: #0c1220;
+  border: 1px solid #242d40;
+  border-radius: 13px;
+}
+
+.j2me-phone-key-group-title {
+  margin: 1px 2px 10px;
+  color: #7f8ca2;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+}
+
+.j2me-phone-key-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.j2me-phone-key {
+  display: flex;
+  min-width: 0;
+  min-height: 87px;
+  padding: 9px;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  background: linear-gradient(145deg, #202a3e, #182033);
+  border: 1px solid #344057;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 #080d17;
+  cursor: pointer;
+  transition: 120ms ease;
+}
+
+.j2me-input-config-panel[data-input-mode="keyboard"] .j2me-phone-key:hover,
+.j2me-input-config-panel[data-input-mode="keyboard"]
+  .j2me-phone-key:focus-visible {
+  border-color: #60a5fa;
+  box-shadow:
+    0 3px 0 #080d17,
+    0 0 0 2px rgba(59, 130, 246, 0.22);
+  transform: translateY(-1px);
+}
+
+.j2me-input-config-panel[data-input-mode="gamepad"] .j2me-phone-key:hover,
+.j2me-input-config-panel[data-input-mode="gamepad"]
+  .j2me-phone-key:focus-visible {
+  border-color: #fb923c;
+  box-shadow:
+    0 3px 0 #080d17,
+    0 0 0 2px rgba(249, 115, 22, 0.22);
+  transform: translateY(-1px);
+}
+
+.j2me-phone-key-name {
+  overflow: hidden;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.j2me-phone-key-bindings {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.j2me-input-config-panel[data-input-mode="keyboard"]
+  .j2me-phone-key-bindings
+  > .gamepad,
+.j2me-input-config-panel[data-input-mode="gamepad"]
+  .j2me-phone-key-bindings
+  > .keyboard {
+  display: none;
+}
+
+.j2me-input-config-panel[data-input-mode="keyboard"]
+  .j2me-binding-legend
+  > .gamepad,
+.j2me-input-config-panel[data-input-mode="gamepad"]
+  .j2me-binding-legend
+  > .keyboard {
+  display: none;
+}
+
+.j2me-binding-chip,
+.j2me-unbound {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 6px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 10px;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.j2me-binding-chip.keyboard {
+  color: #bfdbfe;
+  background: rgba(59, 130, 246, 0.17);
+  border-color: rgba(96, 165, 250, 0.35);
+}
+
+.j2me-binding-chip.gamepad {
+  color: #fed7aa;
+  background: rgba(249, 115, 22, 0.16);
+  border-color: rgba(251, 146, 60, 0.35);
+}
+
+.j2me-binding-chip.removable {
+  width: 100%;
+  cursor: pointer;
+}
+
+.j2me-binding-chip.removable span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.j2me-binding-chip.removable b {
+  margin-left: auto;
+  padding-left: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.62;
+}
+
+.j2me-binding-chip.removable:hover b {
+  opacity: 1;
+}
+
+.j2me-unbound {
+  justify-content: flex-start;
+  color: #59657a;
+  border-color: #273146;
+  border-style: dashed;
+}
+
+.j2me-config-sidebar {
+  padding: 20px 18px;
+  background: #101625;
+  border-left: 1px solid #293349;
+}
+
+.j2me-device-options {
+  display: none;
+}
+
+.j2me-device-options.active {
+  display: block;
+}
+
+.j2me-config-section {
+  margin-bottom: 20px;
+}
+
+.j2me-config-section > label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #9aa6ba;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+
+.j2me-config-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.j2me-preset-btn,
+.j2me-gamepad-preset-btn,
+.j2me-capture-control-gamepad {
+  padding: 7px 10px;
+  color: #dce4f2;
+  background: #202a3d;
+  border: 1px solid #354159;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.j2me-preset-btn:hover {
+  color: #dbeafe;
+  border-color: #60a5fa;
+}
+
+.j2me-gamepad-preset-btn:hover,
+.j2me-capture-control-gamepad:hover {
+  color: #ffedd5;
+  border-color: #fb923c;
+}
+
+.j2me-config-tip {
+  display: flex;
+  padding: 12px;
+  color: #8b98ad;
+  background: rgba(59, 130, 246, 0.09);
+  border: 1px solid rgba(96, 165, 250, 0.18);
+  border-radius: 9px;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.j2me-config-tip strong {
+  margin-bottom: 3px;
+  color: #bfdbfe;
+}
+
+.j2me-gamepad-status {
+  max-height: 84px;
+  overflow-y: auto;
+}
+
+.j2me-gamepad-item,
+.j2me-no-gamepad {
+  padding: 8px 9px;
+  color: #aeb9ca;
+  background: #192236;
+  border-radius: 7px;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.j2me-gamepad-item + .j2me-gamepad-item {
+  margin-top: 5px;
+}
+
+.j2me-no-gamepad {
+  color: #78859b;
+  border: 1px dashed #303b51;
+}
+
+.j2me-deadzone-slider,
+.j2me-fast-forward-speed-slider {
+  width: 100%;
+  height: 6px;
+  margin: 6px 0;
+  background: #28344b;
+  border-radius: 4px;
+  outline: none;
+  appearance: none;
+}
+
+.j2me-deadzone-slider::-webkit-slider-thumb,
+.j2me-fast-forward-speed-slider::-webkit-slider-thumb {
+  width: 17px;
+  height: 17px;
+  background: #f97316;
+  border-radius: 50%;
+  cursor: pointer;
+  appearance: none;
+}
+
+.j2me-deadzone-value,
+.j2me-fast-forward-speed-value {
+  color: #fb923c;
+  font-family: "SF Mono", Monaco, monospace;
+}
+
+.j2me-control-mappings {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.j2me-control-mapping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: #9ca8ba;
+  font-size: 12px;
+}
+
+.j2me-capture-control-gamepad {
+  max-width: 132px;
+  overflow: hidden;
+  padding: 5px 8px;
+  color: #fed7aa;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.j2me-config-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  background: #171f31;
+  border-top: 1px solid #293349;
+}
+
+.j2me-config-footer-spacer {
+  flex: 1;
+}
+
+.j2me-config-reset,
+.j2me-config-export,
+.j2me-config-import {
+  padding: 7px 12px;
+  color: #dce4f2;
+  background: #202a3d;
+  border: 1px solid #354159;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.j2me-config-reset {
+  color: #fca5a5;
+  background: transparent;
+  border-color: rgba(248, 113, 113, 0.45);
+}
+
+.j2me-config-reset:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.j2me-config-export:hover,
+.j2me-config-import:hover {
+  border-color: #71809a;
+}
+
+.j2me-capture-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(4, 8, 16, 0.84);
+  backdrop-filter: blur(4px);
+}
+
+.j2me-capture-modal-content {
+  min-width: 290px;
+  padding: 30px 36px;
+  color: #fff;
+  text-align: center;
+  background: #171f31;
+  border: 1px solid #354159;
+  border-radius: 14px;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.55);
+}
+
+.j2me-capture-modal.keyboard .j2me-capture-modal-content {
+  border-color: #3b82f6;
+}
+
+.j2me-capture-modal.gamepad .j2me-capture-modal-content {
+  border-color: #f97316;
+}
+
+.j2me-capture-device {
+  margin-bottom: 12px;
+  color: #91a0b7;
+  font-size: 12px;
+}
+
+.j2me-capture-modal-content h4 {
+  margin: 0 0 10px;
+  font-size: 19px;
+}
+
+.j2me-capture-modal-content p {
+  margin: 0 0 22px;
+  color: #9aa6b8;
+}
+
+.j2me-capture-modal-content p strong {
+  color: #fff;
+}
+
+.j2me-capture-cancel {
+  padding: 8px 24px;
+  color: #dbe3ef;
+  background: transparent;
+  border: 1px solid #4a566c;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.j2me-capture-cancel:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.j2me-settings-btn {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  width: fit-content;
+  min-width: 0;
+  padding: 0;
+  color: #666;
+  background: none;
+  border: none;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: color 0.2s;
+}
+
+.j2me-settings-btn:hover {
+  color: #999;
+}
+
+@media (max-width: 760px) {
+  .j2me-input-config-panel {
+    width: calc(100vw - 16px);
+    max-height: calc(100vh - 16px);
+  }
+
+  .j2me-config-content {
+    grid-template-columns: 1fr;
+  }
+
+  .j2me-config-sidebar {
+    border-top: 1px solid #293349;
+    border-left: 0;
+  }
+
+  .j2me-phone-keys {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .j2me-config-header,
+  .j2me-phone-key-area,
+  .j2me-config-sidebar,
+  .j2me-config-footer {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .j2me-input-mode-switch {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .j2me-input-mode small,
+  .j2me-keyboard-heading p,
+  .j2me-binding-legend {
+    display: none;
+  }
+
+  .j2me-phone-key {
+    min-height: 80px;
+  }
+}

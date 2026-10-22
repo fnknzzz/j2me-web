@@ -1,0 +1,20 @@
+=== defaultCtor ===
+default/class = java.io.EOFException
+default/message = null
+default/toString = java.io.EOFException
+=== messageCtor ===
+message/class = java.io.EOFException
+message/message = eof-marker
+message/toString = java.io.EOFException: eof-marker
+=== nullMessageCtor ===
+nullMessage/class = java.io.EOFException
+nullMessage/message = null
+nullMessage/toString = java.io.EOFException
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.io.EOFException
+throwDefault/message = null
+throwDefault/toString = java.io.EOFException
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.io.EOFException
+throwMessage/message = after-throw
+throwMessage/toString = java.io.EOFException: after-throw

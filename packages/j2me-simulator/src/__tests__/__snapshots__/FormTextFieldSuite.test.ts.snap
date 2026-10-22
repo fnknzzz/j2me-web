@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormTextFieldSuite > should test TextField and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Form TextField Test ===")
+[print] println("Test: TextField")
+[print] println("TextField label: Name:")
+[print] println("TextField text: John")
+[print] println("Max size: 20")
+[print] println("Size: 4")
+[print] println("Updated text: Jane")
+[print] println("After insert: Jane Doe")
+[print] println("After delete:  Doe")
+[print] println("Form TextField test completed")"
+`;

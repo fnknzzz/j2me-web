@@ -1,0 +1,38 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DirectGraphicsTransformSuite > should correctly transform images with DirectGraphics.drawImage 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[graphics] createSurface("<surface-2>", 20, 10)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawRGBA("[200 pixels]", 0, 0, 20, 10, {"surfaceId":"<surface-2>","color":0,"clipX":0,"clipY":0,"clipWidth":20,"clipHeight":10,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-2>","color":16711680,"clipX":0,"clipY":0,"clipWidth":20,"clipHeight":10,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-2>","color":16711680,"clipX":0,"clipY":0,"clipWidth":20,"clipHeight":10,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("DirectGraphicsTransformSuite started")
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawString("DirectGraphics Transform Test", 2, 2, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawImage("<surface-2>", 10, 30, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("NONE: x=10, y=30")
+[graphics] drawRegion("<surface-2>", 0, 0, 20, 10, 2, 10, 60, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("FLIP_H: x=10, y=60")
+[graphics] drawRegion("<surface-2>", 0, 0, 20, 10, 1, 10, 90, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("FLIP_V: x=10, y=90")
+[graphics] drawRegion("<surface-2>", 0, 0, 20, 10, 6, 10, 120, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("ROT_90: x=10, y=120")
+[graphics] drawRegion("<surface-2>", 0, 0, 20, 10, 3, 10, 150, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("ROT_180: x=10, y=150")
+[graphics] drawRegion("<surface-2>", 0, 0, 20, 10, 5, 10, 180, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("ROT_270: x=10, y=180")
+[graphics] drawRegion("<surface-2>", 0, 0, 20, 10, 7, 10, 210, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("FLIP_H+ROT_90: x=10, y=210")
+[print] println("DirectGraphicsTransformSuite paint done")
+[graphics] flush("<surface-1>")
+[print] println("DirectGraphicsTransformSuite destroyed")"
+`;

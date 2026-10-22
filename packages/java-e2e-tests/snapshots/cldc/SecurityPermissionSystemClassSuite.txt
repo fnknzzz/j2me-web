@@ -1,0 +1,30 @@
+=== ctor_and_basic_accessors ===
+ctor/class_name = com.com.example.SecurityPermissionSystemClassSuite$TestPermission
+ctor/super_class_name = java.security.Permission
+ctor/name = perm.read
+ctor/actions = 
+ctor/toString = ("com.com.example.SecurityPermissionSystemClassSuite$TestPermission" "perm.read")
+=== name_boundaries_null_and_empty ===
+nameBoundary/empty_getName = 
+nameBoundary/null_getName = null
+nameBoundary/null2_getName = null
+nameBoundary/empty_equals_null = false
+nameBoundary/null_equals_null2 = true
+nameBoundary/empty_toString = ("com.com.example.SecurityPermissionSystemClassSuite$TestPermission" "")
+nameBoundary/null_toString = ("com.com.example.SecurityPermissionSystemClassSuite$TestPermission" "null")
+=== equals_hashCode_and_cross_type ===
+eq/p1_equals_p2 = true
+eq/p1_equals_p3 = false
+eq/p1_hashCode = -678682518
+eq/p2_hashCode = -678682518
+eq/p3_hashCode = 2084563602
+eq/p1_equals_null = false
+eq/p1_equals_string = false
+eq/p1_equals_runtimePermission = false
+=== implies_and_newPermissionCollection ===
+implies/self = false
+implies/same_name_other_instance = false
+implies/different_name = false
+implies/null = false
+npc/pc1_is_null = true
+npc/pc2_is_null = true

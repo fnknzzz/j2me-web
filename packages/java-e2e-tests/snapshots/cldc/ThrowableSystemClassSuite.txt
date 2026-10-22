@@ -1,0 +1,27 @@
+=== default_and_string_ctors ===
+default_message_is_not_null = false
+default_message_is_empty_string = false
+default_toString = java.lang.Throwable
+string_message_equals_input = true
+string_message_is_not_empty = true
+string_toString = java.lang.Throwable: base-message
+=== null_message_ctor ===
+null_message_is_not_null = false
+null_message_is_empty_string = false
+null_toString_has_colon = false
+null_toString_value = java.lang.Throwable
+=== subclass_toString_and_message ===
+subclass_class_name = com.com.example.ThrowableSystemClassSuite$MyThrowable
+subclass_message_equals_input = true
+subclass_toString_contains_class = true
+subclass_toString_contains_message = true
+subclass_toString_value = com.com.example.ThrowableSystemClassSuite$MyThrowable: subclass-message
+=== printStackTrace_default_out ===
+before_printStackTrace_default
+after_printStackTrace_default_no_exception
+=== printStackTrace_custom_printstream ===
+custom_ps_content_length = 250
+custom_ps_contains_class = true
+custom_ps_contains_message = true
+=== printStackTrace_null_printstream ===
+printStackTrace_null_ps_exception=java.lang.NullPointerException

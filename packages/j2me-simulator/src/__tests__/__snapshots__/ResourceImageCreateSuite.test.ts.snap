@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ResourceImageCreateSuite > should create Image from resource with try-catch 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Image.createImage Test ===")
+[graphics] createSurface("<surface-2>", 100, 100)
+[print] println("Image loaded successfully")
+[print] println("Image width: 100")
+[print] println("Image height: 100")
+[print] println("Image test completed")"
+`;

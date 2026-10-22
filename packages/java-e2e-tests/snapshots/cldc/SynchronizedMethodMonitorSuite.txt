@@ -1,0 +1,9 @@
+=== synchronized_method_monitor_contention ===
+A_entered
+A_exiting_counter=1
+A_done
+B_entered
+B_exiting_counter=2
+B_done
+final_counter=2
+test_passed=true

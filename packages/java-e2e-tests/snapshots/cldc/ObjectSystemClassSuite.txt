@@ -1,0 +1,41 @@
+=== equals_hashCode_toString_basic ===
+o1_equals_o1 = true
+o1_equals_o3 = true
+o1_equals_o2 = false
+o1_equals_null = false
+o1_hashCode=<~hash@1>
+o1_hashCode_again=<~hash@1>
+o2_hashCode=<~hash@2>
+o1_toString=java.lang.Object@<~hash@3>
+o2_toString=java.lang.Object@<~hash@4>
+intArray_hashCode=<~hash@5>
+strArray_hashCode=<~hash@6>
+intArray_toString=[I@<~hash@7>
+strArray_toString=[Ljava.lang.String;@<~hash@8>
+=== getClass_and_array_types ===
+plain_getClass_name=java.lang.Object
+child_getClass_name=com.com.example.ObjectSystemClassSuite$Child
+plain_class_equals_child_class = false
+plain_getClass_toString=class java.lang.Object
+intArray_getClass_name=[I
+str2dArray_getClass_name=[[Ljava.lang.String;
+=== wait_and_notify_illegal_monitor_state ===
+wait_no_monitor_IllegalMonitorStateException=java.lang.IllegalMonitorStateException
+wait_long_no_monitor_IllegalMonitorStateException=java.lang.IllegalMonitorStateException
+wait_long_int_no_monitor_IllegalMonitorStateException=java.lang.IllegalMonitorStateException
+notify_no_monitor_IllegalMonitorStateException=java.lang.IllegalMonitorStateException
+notifyAll_no_monitor_IllegalMonitorStateException=java.lang.IllegalMonitorStateException
+=== wait_with_timeout_in_synchronized ===
+before_wait_long_in_sync
+after_wait_long_in_sync
+before_wait_long_int_in_sync
+after_wait_long_int_in_sync
+notify_in_sync_before
+notify_in_sync_after
+notifyAll_in_sync_before
+notifyAll_in_sync_after
+=== wait_negative_timeouts ===
+wait_negative_timeout_IllegalArgumentException=java.lang.IllegalArgumentException
+wait_negative_timeout_with_nanos_IllegalArgumentException=java.lang.IllegalArgumentException
+wait_negative_nanos_IllegalArgumentException=java.lang.IllegalArgumentException
+wait_nanos_too_large_IllegalArgumentException=java.lang.IllegalArgumentException

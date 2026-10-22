@@ -1,0 +1,24 @@
+=== ctorAndFlags ===
+ctor1/ready = false
+ctor1/markSupported = false
+ctor2/ready = false
+ctor2/markSupported = false
+ctor/markReset_exception=IOException
+=== readDefaults ===
+readDefaults/readNoArg = -1
+readDefaults/readArray = -1
+readDefaults/readArrayOffLen = -1
+=== readArrayNullAndEmpty ===
+readNull/exception throws NullPointerException
+readEmpty/nEmpty = -1
+=== readArrayOffsetLenDefaults ===
+offLen/valid = -1
+offLen/negOff = -1
+offLen/negLen = -1
+offLen/overflow = -1
+=== skipAndClose ===
+skip/zero = 0
+skip/positive = 0
+skip/negative = exception:IllegalArgumentException
+afterClose/ready = false
+afterClose/read = -1

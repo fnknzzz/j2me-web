@@ -1,0 +1,8 @@
+=== checkPermission_basic ===
+basic/p1_exception = java.security.AccessControlException
+basic/p2_exception = java.security.AccessControlException
+=== checkPermission_null_and_multiple_calls ===
+nullArg/exception = java.lang.NullPointerException
+loop/first_exception = java.security.AccessControlException
+loop/successCount = 0
+loop/failCount = 20

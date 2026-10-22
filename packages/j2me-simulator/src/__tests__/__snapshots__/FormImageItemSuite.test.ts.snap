@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormImageItemSuite > should test ImageItem and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[graphics] createSurface("<surface-2>", 32, 32)
+[graphics] createSurface("<surface-3>", 32, 32)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Form ImageItem Test ===")
+[print] println("Test: ImageItem")
+[graphics] drawRGBA("[1024 pixels]", 0, 0, 32, 32, {"surfaceId":"<surface-2>","color":0,"clipX":0,"clipY":0,"clipWidth":32,"clipHeight":32,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] getPixels("[1024 pixels]", 0, 32, 0, 0, 32, 32, {"surfaceId":"<surface-2>","color":0,"clipX":0,"clipY":0,"clipWidth":32,"clipHeight":32,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] createSurface("<surface-4>", 48, 48)
+[graphics] createSurface("<surface-5>", 48, 48)
+[graphics] drawRGBA("[1024 pixels]", 0, 0, 32, 32, {"surfaceId":"<surface-3>","color":0,"clipX":0,"clipY":0,"clipWidth":32,"clipHeight":32,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("ImageItem label: Icon:")
+[print] println("Alt text: Alt text")
+[print] println("Layout: 3")
+[graphics] drawRGBA("[2304 pixels]", 0, 0, 48, 48, {"surfaceId":"<surface-4>","color":0,"clipX":0,"clipY":0,"clipWidth":48,"clipHeight":48,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] getPixels("[2304 pixels]", 0, 48, 0, 0, 48, 48, {"surfaceId":"<surface-4>","color":0,"clipX":0,"clipY":0,"clipWidth":48,"clipHeight":48,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawRGBA("[2304 pixels]", 0, 0, 48, 48, {"surfaceId":"<surface-5>","color":0,"clipX":0,"clipY":0,"clipWidth":48,"clipHeight":48,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("Image updated")
+[print] println("Form ImageItem test completed")"
+`;

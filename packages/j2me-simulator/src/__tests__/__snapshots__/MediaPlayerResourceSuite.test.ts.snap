@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MediaPlayerResourceSuite > should test creating player from resource and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Media Player Resource Test ===")
+[print] println("Test: Create player from resource")
+[media] createPlayer({"locator":"/sound.mid"})
+[print] println("Player created from resource")
+[print] println("Initial state: 100")
+[print] println("Content type: audio/midi")
+[media] close()
+[print] println("State after close: 0")
+[print] println("Media player resource test completed")"
+`;

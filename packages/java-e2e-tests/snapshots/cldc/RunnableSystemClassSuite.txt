@@ -1,0 +1,26 @@
+=== reflection_and_metadata ===
+runnable_class_name=java.lang.Runnable
+runnable_simple_name=Runnable
+runnable_superclass=null
+runnable_is_interface=true
+forName_same_class=true
+=== instantiation_errors ===
+newInstance_InstantiationException
+=== implementation_and_dispatch ===
+NamedRunnable_start name=task-A,count=3
+NamedRunnable_tick name=task-A,i=0
+NamedRunnable_tick name=task-A,i=1
+NamedRunnable_tick name=task-A,i=2
+NamedRunnable_end name=task-A
+NamedRunnable_start name=task-B,count=0
+NamedRunnable_end name=task-B
+anon_run_invoked
+=== instanceof_and_null ===
+r_instanceof_Runnable=true
+objRunnable_instanceof_Runnable=true
+objPlain_instanceof_Runnable=false
+null_instanceof_Runnable=false
+=== cast_and_exceptions ===
+cast_ok_same_instance=true
+cast_null_result_is_null=true
+cast_plain_to_runnable:ClassCastException

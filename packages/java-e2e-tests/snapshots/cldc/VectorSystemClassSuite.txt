@@ -1,0 +1,66 @@
+=== constructors_and_capacity ===
+default_size=0
+default_capacity=10
+default_isEmpty=true
+ctor_5_size=0
+ctor_5_capacity=5
+ctor_neg_size=exception:IllegalArgumentException
+ctor_neg_capacity=exception:IllegalArgumentException
+ctor_3_2_size=0
+ctor_3_2_capacity=3
+ensure_capacity_before=3
+ensure_capacity_after=13
+ensure_capacity_after_small_request=13
+trimToSize_before=13
+trimToSize_after=0
+=== add_and_basic_access ===
+add_basic_isEmpty_initial=true
+add_basic_size_initial=0
+add_basic_isEmpty_after=false
+add_basic_size_after=3
+add_basic_firstElement=A
+add_basic_lastElement=C
+add_basic_elementAt_0=A
+add_basic_elementAt_2=C
+add_basic_elementAt_10_ex=java.lang.ArrayIndexOutOfBoundsException
+add_basic_toString_isNull=false
+add_basic_toString_len=9
+=== contains_index_remove_copy ===
+contains_X=true
+contains_W=false
+indexOf_X=0
+indexOf_X_from1=2
+indexOf_W=-1
+lastIndexOf_X=2
+lastIndexOf_X_from2=2
+lastIndexOf_W=-1
+contains_Key1_by_equal=true
+contains_Key3_by_equal=false
+remove_vector_initial=[A, B, A]
+removeElement_A_first=true
+remove_vector_after_first=[B, A]
+removeElement_W=false
+removeElementAt_10_ex=java.lang.ArrayIndexOutOfBoundsException
+removeAllElements_size=0
+removeAllElements_isEmpty=true
+copyInto_before=[init, init, init, init, init]
+copyInto_after=[C1, C2, init, init, init]
+=== insert_set_setSize_capacity ===
+insert_initial=[A, C],cap=10
+insert_middle=[A, B, C],size=3
+insert_neg_index=exception:ArrayIndexOutOfBoundsException
+insert_large_index=exception:ArrayIndexOutOfBoundsException
+setElementAt_1=[A, X, C]
+setElementAt_100_ex=java.lang.ArrayIndexOutOfBoundsException
+setSize_initial=[1, 2, 3],size=3
+setSize_5=[1, 2, 3, null, null],size=5
+setSize_1=[1],size=1
+setSize_neg=exception:ArrayIndexOutOfBoundsException
+capacity_before2=10,after2=20
+=== elements_enumerator ===
+elements_nonempty_0=e1
+elements_nonempty_1=e2
+elements_nonempty_2=e3
+elements_nonempty_hasMore_after=false
+elements_empty_hasMore=false
+elements_empty_next_ex=java.util.NoSuchElementException

@@ -1,0 +1,19 @@
+=== ctor_reflection_empty_enumerator ===
+ctor_class_name=java.util.Vector$Enumerator
+ctor_interface_0=java.util.Enumeration
+ctor_implements_Enumeration = true
+ctor_instance_class=java.util.Vector$Enumerator
+ctor_hasMore_initial = false
+ctor_next_on_empty_ex=java.util.NoSuchElementException
+=== vector_elements_non_empty ===
+enum_elem_0=A
+enum_elem_1=B
+enum_elem_2=C
+enum_hasMore_after = false
+enum_next_after_end_NoSuchElementException
+=== vector_elements_empty_and_after_modification ===
+empty_enum_hasMore_initial = false
+empty_enum_next_NoSuchElementException
+enum_after_mod_elem_0=X1
+enum_after_mod_elem_1=X2
+enum_after_mod_hasMore_after = false

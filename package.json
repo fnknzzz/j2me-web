@@ -1,0 +1,34 @@
+{
+  "name": "j2me-web-workspace",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.14.0",
+  "engines": {
+    "node": ">=22.20.0 <23"
+  },
+  "scripts": {
+    "build": "pnpm --filter @jsjvm/j2me-core build && pnpm --filter @jsjvm/j2me-simulator build && pnpm --filter @jsjvm/j2me-sound-player build && pnpm --filter j2me-web build",
+    "pack:check": "pnpm --filter j2me-web build && pnpm --filter j2me-web pack:check",
+    "test": "pnpm test:unit && pnpm visual:test",
+    "test:unit": "pnpm --filter @jsjvm/j2me-core test && pnpm --filter @jsjvm/j2me-simulator test && pnpm --filter @jsjvm/j2me-sound-player test && pnpm --filter j2me-web test && pnpm --filter @jsjvm/java-e2e-tests test",
+    "test:all": "pnpm test",
+    "test:rust": "cargo test -p j2me-core",
+    "test:web": "pnpm --filter j2me-web test",
+    "visual:build": "pnpm --filter @jsjvm/visual-snapshot-tools build",
+    "visual:test": "pnpm --filter @jsjvm/visual-snapshot-tools test",
+    "test:simulator": "pnpm --filter @jsjvm/j2me-simulator test",
+    "test:core": "pnpm --filter @jsjvm/j2me-core test",
+    "demo": "pnpm --filter j2me-web-demo dev",
+    "demo:build": "pnpm --filter j2me-web-demo build",
+    "check": "pnpm build && cargo check -p j2me-core",
+    "wire:check": "pnpm --filter @jsjvm/j2me-core wire:check",
+    "biome": "pnpm exec biome check --write .",
+    "release:patch": "node scripts/release.mjs patch",
+    "release:minor": "node scripts/release.mjs minor",
+    "release:major": "node scripts/release.mjs major"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.2",
+    "typescript": "^7.0.2"
+  }
+}

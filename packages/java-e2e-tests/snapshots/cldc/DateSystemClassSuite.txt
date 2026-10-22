@@ -1,0 +1,27 @@
+=== ctor_and_getTime ===
+ctor_now_class=java.util.Date
+ctor_now_equals_self = true
+ctor_now_getTime_stable = true
+ctor_zero_time = 0
+ctor_pos_time = 123456789
+ctor_neg_time = -1000
+=== equals_and_hashCode ===
+eq_a1_a2 = true
+eq_a1_b = false
+eq_a1_null = false
+eq_a1_string = false
+eq_a1_subclass = true
+hash_a1 = 42
+hash_a2 = 42
+hash_b = 1000
+hash_a1_eq_a2 = true
+hash_a1_eq_b = false
+=== setTime_and_getTime ===
+setTime_initial = 0
+setTime_after_1 = 1
+setTime_after_large = 999999999
+setTime_after_negative = -500
+=== toString_format ===
+toString_epoch=Thu Jan 01 08:00:00 CST 1970
+toString_sample1=Thu Jan 01 09:00:00 CST 1970
+toString_sample2=Fri Jan 02 08:00:00 CST 1970

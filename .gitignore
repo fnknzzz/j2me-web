@@ -1,0 +1,22 @@
+node_modules/
+dist/
+target/
+.pnpm-store/
+.turbo/
+coverage/
+*.tsbuildinfo
+*.log
+.DS_Store
+apps/demo/src/rom/
+crates/j2me-core/j2me_core.wasm
+crates/j2me-core/j2me-rt/build/
+crates/j2me-core/j2me-rt/build-src/
+crates/j2me-core/j2me-rt/*.jar
+packages/j2me-simulator/src/__tests__/j2me-jars/
+# Generated from the test JARs by `pnpm test` / `jar:prepare`.
+packages/j2me-simulator/src/__tests__/compiled/
+packages/java-e2e-tests/jars/
+tools/visual-snapshot/cases/jars/
+tools/visual-snapshot/dist/
+tools/visual-snapshot/dist-web/
+tools/visual-snapshot/visual-artifacts/

@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+set -eu
+
+echo "Running Biome..."
+pnpm biome
+
+if ! git diff --quiet; then
+  echo "Biome applied fixes. Review and stage them before committing." >&2
+  exit 1
+fi
+
+echo "Checking Rust formatting..."
+cargo fmt --all -- --check

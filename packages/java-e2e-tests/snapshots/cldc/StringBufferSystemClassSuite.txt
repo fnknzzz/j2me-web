@@ -1,0 +1,68 @@
+=== constructors_and_basic_properties ===
+default_ctor_toString=''
+default_ctor_length=0
+default_ctor_capacity=16
+ctor_int_1_capacity=1
+ctor_int_32_capacity=32
+ctor_str_abc_toString='abc'
+ctor_str_abc_length=3
+ctor_str_abc_capacity=19
+ctor_str_long_length=20
+ctor_str_long_capacity=36
+ctor_str_null:NullPointerException
+=== append_overloads_and_nulls ===
+append_String_result='hello,world!null'
+append_Object_result='base-CustomObject-A|null'
+append_primitives_result='0-112345678901-9223372036854775808truefalseX1.5-0.03.14-2.5'
+append_charArray_full='[ABCDE]'
+append_charArray_slice_normal='[BCD]'
+append_charArray_slice_off_neg:IndexOutOfBoundsException
+append_charArray_slice_len_neg:IndexOutOfBoundsException
+append_charArray_slice_overflow:IndexOutOfBoundsException
+append_charArray_null:NullPointerException
+=== index_access_and_setters ===
+charAt_0='a'
+charAt_5='f'
+charAt_neg_index:StringIndexOutOfBoundsException
+charAt_eq_length:StringIndexOutOfBoundsException
+setCharAt_normal_result='AyZ'
+setCharAt_neg_index:StringIndexOutOfBoundsException
+setCharAt_eq_length:StringIndexOutOfBoundsException
+setLength_extend_length=5
+setLength_extend_chars='48,49,0,0,0'
+setLength_truncate_length=1
+setLength_truncate_toString='0'
+setLength_negative:StringIndexOutOfBoundsException
+=== delete_variants ===
+deleteCharAt_middle='01345'
+deleteCharAt_neg_index:StringIndexOutOfBoundsException
+deleteCharAt_eq_length:StringIndexOutOfBoundsException
+delete_prefix='cdefgh'
+delete_emptyRange='abcdefgh'
+delete_to_end='abc'
+delete_start_neg:StringIndexOutOfBoundsException
+delete_start_gt_end:StringIndexOutOfBoundsException
+=== insert_overloads ===
+insert_String_basic='A01B2345C'
+insert_String_index_neg:StringIndexOutOfBoundsException
+insert_String_index_gt_len:StringIndexOutOfBoundsException
+insert_primitives='faZlsetrue-1456231.25-3.5'
+insert_charArray_full='-abcde--'
+insert_charArray_slice_normal='--bcd-'
+insert_charArray_slice_off_neg:StringIndexOutOfBoundsException
+insert_charArray_slice_len_neg:StringIndexOutOfBoundsException
+insert_charArray_slice_overflow:StringIndexOutOfBoundsException
+insert_Object_result='nullOCustomObject-XBJ'
+=== getChars_and_exceptions ===
+getChars_normal_dst='##BCDE####'
+getChars_srcBegin_neg:StringIndexOutOfBoundsException
+getChars_srcEnd_gt_len:StringIndexOutOfBoundsException
+getChars_dstBegin_neg:java.lang.ArrayIndexOutOfBoundsException
+getChars_dst_overflow:java.lang.ArrayIndexOutOfBoundsException
+getChars_dst_null:NullPointerException
+=== reverse_and_ensureCapacity ===
+reverse_palindrome='racecar'
+reverse_normal='9876543210'
+ensureCapacity_before=16
+ensureCapacity_after=66
+ensureCapacity_grew_or_equal=true

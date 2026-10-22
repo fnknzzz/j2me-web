@@ -1,0 +1,42 @@
+=== instance_basic_values ===
+d_class=java.lang.Double
+d_toString=2.5
+d_doubleValue=2.5
+d_floatValue=2.5
+d_intValue=2
+d_longValue=2
+d_shortValue=2
+d_byteValue=2
+d_hashCode=1074003968
+dn_doubleValue=-3.7
+dn_intValue=-3
+dn_longValue=-3
+dn_shortValue=-3
+dn_byteValue=-3
+dn_hashCode=1502871555
+=== instance_equals_nan_inf ===
+eq_same_value=true
+eq_diff_value=false
+eq_null=false
+eq_nonDouble=false
+eq_nan_nan=true
+nan_isNaN=true
+inf_isInfinite_pos=true
+inf_isInfinite_neg=true
+inf_isNaN=false
+=== static_bits_and_checks ===
+static_toString_2.0=2.0
+bits_of_2.0=4611686018427387904
+back_from_bits=2.0
+static_isNaN_0=false
+static_isNaN_nan=true
+static_isInfinite_pos=true
+static_isInfinite_neg=true
+static_isInfinite_0=false
+=== parseDouble_and_valueOf ===
+valueOf_3.5=3.5
+parseDouble_4.5=4.5
+parseDouble_space_prefix:NO_EXCEPTION
+valueOf_space_suffix:NO_EXCEPTION
+parseDouble_invalid:NumberFormatException
+valueOf_invalid:NumberFormatException

@@ -1,0 +1,10 @@
+=== Exception Handler Cleanup Test ===
+Test 1: Constructor with try-catch
+Constructor catch executed
+Test 1: PASS
+Test 2: Method with try-catch
+Method catch executed
+Test 2: PASS
+Test 3: Nested try-catch
+Test 3: Inner catch executed
+Test 3: PASS

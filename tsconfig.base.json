@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "checkJs": false,
+    "allowJs": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@jsjvm/j2me-core": ["./crates/j2me-core/index.ts"],
+      "@jsjvm/j2me-core/m3g-wire": [
+        "./crates/j2me-core/src/gles1_webgpu/schema/m3g_webgpu_wire.json"
+      ],
+      "@jsjvm/j2me-simulator": ["./packages/j2me-simulator/src/index.ts"],
+      "@jsjvm/j2me-simulator/env": ["./packages/j2me-simulator/src/env.d.ts"],
+      "@jsjvm/j2me-sound-player": [
+        "./packages/j2me-sound-player/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

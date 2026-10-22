@@ -1,0 +1,40 @@
+=== basic_primitives ===
+readBoolean:true
+readByte:-128
+readUnsignedByte:255
+readShort:258
+readUnsignedShort:90
+readChar:90
+readInt:16909060
+readLong:1234605616436508552
+readFloat:2.5
+readDouble:3.25
+=== arrays_and_skipBytes ===
+skipBytes_zero:0
+skipBytes_two:2
+skipBytes_big:3
+readFully_array:1,2,3
+readFully_off_len:0,4,5,6,7
+readFully_null_array_NPE
+readFully_null_off_len_NPE
+=== eof_exceptions ===
+eof_readBoolean:EOFException
+eof_readByte:EOFException
+eof_readUnsignedByte:EOFException
+eof_readShort:EOFException
+eof_readUnsignedShort:EOFException
+eof_readChar:EOFException
+eof_readInt:EOFException
+eof_readLong:EOFException
+eof_readFloat:EOFException
+eof_readDouble:EOFException
+eof_readFully_array:EOFException
+eof_readFully_off_len:java.lang.IndexOutOfBoundsException
+=== readUTF_variants ===
+readUTF_ascii:ABC
+readUTF_2bytes_len:1
+readUTF_3bytes_len:1
+utf_bad_2bytes_short:UTFDataFormatException
+utf_bad_3bytes_short:UTFDataFormatException
+utf_bad_continuation:UTFDataFormatException
+utf_bad_start:UTFDataFormatException

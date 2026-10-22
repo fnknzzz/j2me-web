@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    # j2me-core's WASM build launches a nested host build to generate its
+    # compact boot image. Use Clang for both builds: the M3G bridge relies on
+    # Clang-compatible diagnostics and is also what the WASM build uses.
+    env:
+      CC: clang
+      CXX: clang++
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "8"
+      - run: corepack enable
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm exec biome check .
+      - run: pnpm test:unit

@@ -1,0 +1,3 @@
+Hello from J2ME resource file!
+This is a test text resource.
+Line 3 of the text file.

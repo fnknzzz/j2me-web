@@ -1,0 +1,16 @@
+=== noArgCtor ===
+noArg_class=java.util.NoSuchElementException
+noArg_message=null
+noArg_toString=java.util.NoSuchElementException
+=== stringCtor_nonNull ===
+str_nonNull_class=java.util.NoSuchElementException
+str_nonNull_message=no more elements
+str_nonNull_toString=java.util.NoSuchElementException: no more elements
+str_nonNull_toString_contains_msg = true
+=== stringCtor_null ===
+str_null_message=null
+str_null_toString=java.util.NoSuchElementException
+=== thrown_exception ===
+thrown_class=java.util.NoSuchElementException
+thrown_message=thrown from test
+thrown_toString=java.util.NoSuchElementException: thrown from test

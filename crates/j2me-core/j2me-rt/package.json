@@ -1,0 +1,28 @@
+{
+  "name": "@jsjvm/j2me-rt",
+  "version": "0.1.0",
+  "private": false,
+  "description": "J2ME/CLDC system classes — Java source + compiled JAR for JVM implementations",
+  "main": "classes.jar",
+  "files": [
+    "classes.jar",
+    "classes.debug.jar",
+    "classes.prod.jar",
+    "l10n/**"
+  ],
+  "scripts": {
+    "build:debug": "make MODE=debug classes.jar",
+    "build:prod": "make MODE=prod classes.jar",
+    "build": "pnpm build:debug && pnpm build:prod",
+    "build:jar": "make clean && make MODE=debug classes.jar && make MODE=prod classes.jar",
+    "clean": "make clean"
+  },
+  "keywords": [
+    "j2me",
+    "cldc",
+    "midp",
+    "system-classes",
+    "java"
+  ],
+  "license": "MIT"
+}

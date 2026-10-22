@@ -1,0 +1,33 @@
+[package]
+name = "j2me-core"
+version = "0.1.0"
+edition = "2021"
+description = "Single-threaded Rust JVM for J2ME — trampoline-based cooperative scheduling"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+boot-generator = []
+
+[[bin]]
+name = "generate_boot_image"
+path = "src/bin/generate_boot_image.rs"
+required-features = ["boot-generator"]
+
+[dependencies]
+thiserror = "1.0"
+byteorder = "1.5"
+cesu8 = "1.1"
+zip = { version = "0.6", default-features = false, features = ["deflate"] }
+serde = { version = "1", features = ["derive"] }
+bincode = "1"
+flate2 = "1"
+ryu = "1"
+earcutr = "0.4"
+bytemuck = { version = "1", features = ["derive"] }
+j2me-core-native-macros = { path = "../j2me-core-native-macros" }
+
+[build-dependencies]
+cc = "1"

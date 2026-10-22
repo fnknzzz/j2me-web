@@ -1,0 +1,16 @@
+f0-f-1
+f0-d-1
+f0-i-1
+f0-l-1
+f0-s-1
+f0-b-1
+f0-eq-true
+f0-nan-true
+f0-inf-true
+F-nan-false
+F-inf-true
+F-ts-2.0
+F-f2i-1073741824
+F-i2f-2
+F-vo-2
+F-pf-3

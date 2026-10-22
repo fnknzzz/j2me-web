@@ -1,0 +1,21 @@
+=== ctor_default_and_basic_getters ===
+default_class=com.com.example.TimeZoneSystemClassSuite$TestTimeZone
+default_id=CST
+default_rawOffset=28800000
+default_id_again=CST
+default_rawOffset_again=28800000
+=== ctor_with_id_and_positive_offset ===
+tz1_id=Asia/Shanghai
+tz1_rawOffset=28800000
+tz2_id=UTC+2
+tz2_rawOffset=7200000
+tz2_id_again=UTC+2
+tz2_rawOffset_again=7200000
+=== ctor_with_null_id_and_negative_offset ===
+null_id_valueOf=null
+null_id_rawOffset=-10800000
+=== ctor_with_extreme_offsets ===
+max_id=MAX
+max_rawOffset=2147483647
+min_id=MIN
+min_rawOffset=-2147483648

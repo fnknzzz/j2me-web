@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RMSRecordSizeSuite > should test record size methods and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Record Size Test ===")
+[rms] load("rms:SizeTest") => null
+[rms] save("rms:SizeTest", "<ArrayBuffer:20bytes>")
+[print] println("Opened store")
+[print] println("Initial size: 0")
+[rms] save("rms:SizeTest", "<ArrayBuffer:39bytes>")
+[print] println("Added record 1, ID: 1")
+[print] println("Size after add: 11")
+[print] println("Record 1 size: 11")
+[rms] save("rms:SizeTest", "<ArrayBuffer:147bytes>")
+[print] println("Added record 2 (100 bytes), ID: 2")
+[print] println("Total size: 111")
+[print] println("Record 2 size: 100")
+[rms] save("rms:SizeTest", "<ArrayBuffer:147bytes>")
+[rms] remove("rms:SizeTest")
+[print] println("Test completed")"
+`;

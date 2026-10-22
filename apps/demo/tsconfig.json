@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    "paths": {
+      "j2me-web": ["../../packages/j2me-web/src/index.ts"],
+      "j2me-web/*": ["../../packages/j2me-web/src/*"],
+      "@jsjvm/j2me-core": ["../../crates/j2me-core/index.ts"],
+      "@jsjvm/j2me-core/m3g-wire": [
+        "../../crates/j2me-core/src/gles1_webgpu/schema/m3g_webgpu_wire.json"
+      ],
+      "@/j2me-phone": [
+        "./src/components/j2me-phone.ts"
+      ]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "references": [{ "path": "../../packages/j2me-web" }]
+}

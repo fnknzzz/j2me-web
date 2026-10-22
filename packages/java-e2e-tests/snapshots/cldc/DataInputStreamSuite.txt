@@ -1,0 +1,44 @@
+Test 1: Basic type reading
+available: 31
+readBoolean: true
+readByte: 127
+readUnsignedByte: 255
+readShort: 4660
+readUnsignedShort: 22136
+readInt: 305419896
+readLong: 1311768467463790320
+readFloat: 3.1415927
+readDouble: 3.141592653589793
+available after: 0
+Test 2: UTF string reading
+readUTF: Hello
+
+Test 3: readFully and skipBytes
+readFully: 10,20,30
+readFully(off,len): 40,50
+skipBytes: 0
+
+Test 4: UTF with ASCII
+readUTF: ABC
+
+Test 5: read methods
+read(): 65
+read(buf): 2
+buf3: 66,67
+
+Test 6: read with offset and length
+read(buf,off,len): 3
+buf4: 0,10,20,30
+
+Test 7: skip method
+skip: 2
+read after skip: 30
+
+Test 8: mark and reset
+markSupported: true
+read1: 10
+read2: 10
+
+Test 9: null InputStream throws NullPointerException on read
+Created DataInputStream with null
+NullPointerException caught as expected

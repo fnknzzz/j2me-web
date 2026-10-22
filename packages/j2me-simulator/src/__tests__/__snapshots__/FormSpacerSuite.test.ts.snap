@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormSpacerSuite > should test Spacer and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Form Spacer Test ===")
+[print] println("Test: Spacer")
+[print] println("Spacer min width: 100")
+[print] println("Spacer min height: 20")
+[print] println("Updated min width: 150")
+[print] println("Updated min height: 30")
+[print] println("Form Spacer test completed")"
+`;

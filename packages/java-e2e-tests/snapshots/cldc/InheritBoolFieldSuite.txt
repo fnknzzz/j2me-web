@@ -1,0 +1,5 @@
+parent_initial=true
+child_initial=false
+parent_after_set=false
+check_parent=true
+child_after_set=true

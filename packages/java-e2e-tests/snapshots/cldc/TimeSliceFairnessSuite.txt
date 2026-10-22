@@ -1,0 +1,6 @@
+Worker 1 done
+Worker 3 done
+Worker 2 done
+Counter1: 100
+Counter2: 100
+Counter3: 100

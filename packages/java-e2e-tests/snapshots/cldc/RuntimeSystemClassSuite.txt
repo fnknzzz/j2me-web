@@ -1,0 +1,22 @@
+=== getRuntime_singleton ===
+r1_not_null = true
+r2_not_null = true
+same_instance = true
+class_name=java.lang.Runtime
+super_class_name=java.lang.Object
+=== gc_invocation ===
+gc_invoked = true
+=== memory_values_and_boundaries ===
+free1=<~mem@1>
+total1=<~mem@2>
+free2=<~mem@1>
+total2=<~mem@2>
+free1_ge_zero = true
+total1_ge_zero = true
+free2_ge_zero = true
+total2_ge_zero = true
+free1_eq_free2 = true
+total1_eq_total2 = true
+=== availableProcessors_constant === <skip>
+=== exit_noop_and_return ===
+before_exit_0=ok

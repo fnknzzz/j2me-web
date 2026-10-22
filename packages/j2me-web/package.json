@@ -1,0 +1,62 @@
+{
+  "name": "j2me-web",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Run J2ME MIDlets in the browser with WebGPU rendering and input support",
+  "author": "fnknzzz <fnknzzz@users.noreply.github.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fnknzzz/j2me-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fnknzzz/j2me-web/issues"
+  },
+  "homepage": "https://github.com/fnknzzz/j2me-web#readme",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "pnpm --dir ../../crates/j2me-core build && tsc --build ../j2me-simulator/tsconfig.json --force && tsc --build ../j2me-sound-player/tsconfig.json --force && rslib build && cp src/public.d.ts dist/index.d.ts",
+    "prepack": "pnpm run build",
+    "clean": "rimraf dist",
+    "test": "vitest run",
+    "pack:check": "npm pack --dry-run"
+  },
+  "devDependencies": {
+    "@jsjvm/j2me-simulator": "workspace:*",
+    "@jsjvm/j2me-sound-player": "workspace:*",
+    "@jsjvm/j2me-core": "workspace:*",
+    "@microsoft/api-extractor": "^7.59.4",
+    "@rslib/core": "1.0.3",
+    "@types/node": "^22.10.5",
+    "@webgpu/types": "0.1.70",
+    "rimraf": "^6.0.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.0.15"
+  },
+  "keywords": [
+    "j2me",
+    "java-me",
+    "j2me-emulator",
+    "midlet",
+    "midp",
+    "cldc",
+    "web-j2me"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

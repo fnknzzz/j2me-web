@@ -1,0 +1,15 @@
+=== default_ctor_and_hierarchy ===
+e1_class=java.io.InterruptedIOException
+e1_instanceof_IOException=true
+e1_instanceof_Exception=true
+e1_message=null
+e1_toString=java.io.InterruptedIOException
+=== message_ctor ===
+e2_message=io-interrupted-test-message
+e2_toString=java.io.InterruptedIOException: io-interrupted-test-message
+e3_message=second-message-123
+e3_toString=java.io.InterruptedIOException: second-message-123
+=== null_message_ctor ===
+null_msg_class=java.io.InterruptedIOException
+null_msg_message=null
+null_msg_toString=java.io.InterruptedIOException

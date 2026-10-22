@@ -1,0 +1,26 @@
+=== capacity_and_length_extremes ===
+long_ctor_length=40
+long_ctor_capacity=56
+after_setLength0_length=0
+after_setLength0_capacity=56
+extend_with_zeros_length=4
+extend_with_zeros_chars=90,0,0,0
+after_truncate_and_append_length=2
+after_truncate_and_append_chars=90,89
+=== append_and_insert_object_variants ===
+append_default_toString_result='obj-com.com.example.StringBufferEdgeCasesSystemClassSuite$DefaultToStringObject@<~hash@1>'
+append_custom_toString_result='obj-CustomObject-EDGE'
+append_null_toString_result='obj-null'
+insert_object_mixed_result='com.com.example.StringBufferEdgeCasesSystemClassSuite$DefaultToStringObject@<~hash@2>MIDDLECustomObject-TAIL'
+insert_null_toString_result='conullre'
+=== delete_boundary_pairs ===
+delete_start_eq_len_end_eq_len='0123'
+delete_start_eq_len_end_gt_len='0123'
+delete_start_gt_len_end_gt_len:StringIndexOutOfBoundsException
+delete_all_content_length=0
+delete_all_content_toString=''
+=== getChars_empty_and_exact_fit ===
+getChars_exact_fit='ABCDEF'
+getChars_empty_range='1234'
+getChars_middle_write='[BCD]'
+getChars_tail_exact_fit='***ABC'

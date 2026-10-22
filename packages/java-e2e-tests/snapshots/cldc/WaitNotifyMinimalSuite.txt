@@ -1,0 +1,10 @@
+Main: starting threads
+Waiter: acquired lock
+Waiter: calling wait
+Notifier: acquired lock
+Notifier: calling notify
+Notifier: called notify
+Notifier: released lock
+Waiter: woke up from wait
+Waiter: done
+Main: all threads finished

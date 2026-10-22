@@ -1,0 +1,20 @@
+=== defaultCtor ===
+default/class = java.lang.NegativeArraySizeException
+default/message = null
+default/toString = java.lang.NegativeArraySizeException
+=== messageCtor ===
+message/class = java.lang.NegativeArraySizeException
+message/message = negative-array-size
+message/toString = java.lang.NegativeArraySizeException: negative-array-size
+=== nullMessageCtor ===
+nullMessage/class = java.lang.NegativeArraySizeException
+nullMessage/message = null
+nullMessage/toString = java.lang.NegativeArraySizeException
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.lang.NegativeArraySizeException
+throwDefault/message = null
+throwDefault/toString = java.lang.NegativeArraySizeException
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.lang.NegativeArraySizeException
+throwMessage/message = after-throw
+throwMessage/toString = java.lang.NegativeArraySizeException: after-throw

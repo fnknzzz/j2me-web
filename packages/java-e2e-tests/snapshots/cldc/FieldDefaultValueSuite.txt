@@ -1,0 +1,20 @@
+=== int default ===
+0
+=== long default ===
+0
+=== float default ===
+0.0
+=== double default ===
+0.0
+=== boolean default ===
+false
+=== byte default ===
+0
+=== short default ===
+0
+=== char default ===
+0
+=== String default ===
+null
+=== Object default ===
+null

@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MediaVolumeControlSuite > should test VolumeControl and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("=== Media Volume Control Test ===")
+[print] println("Test: VolumeControl")
+[media] createPlayer({"locator":"/audio.wav"})
+[print] println("VolumeControl obtained")
+[print] println("Current volume level: 100")
+[media] setVolume(75)
+[print] println("New volume level: 75")
+[print] println("Is muted: false")
+[media] setMuted(true)
+[print] println("Muted: true")
+[media] setMuted(false)
+[print] println("Unmuted: false")
+[media] close()
+[print] println("Media volume control test completed")"
+`;

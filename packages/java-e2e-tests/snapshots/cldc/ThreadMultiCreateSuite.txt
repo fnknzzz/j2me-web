@@ -1,0 +1,3 @@
+t1_name=Thread-0
+t2_name=Thread-1
+t3_name=MyThread

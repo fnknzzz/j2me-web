@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MediaManagerSuite > should test Media Manager API and match snapshot 1`] = `
+"[print] println("=== Media Manager Test ===")
+[print] println("Test: Manager basics")
+[media] getSupportedContentTypes("capture") => []
+[print] print("Supported content types count: ")
+[print] println("0")
+[media] getSupportedProtocols("audio/midi") => []
+[print] print("Supported protocols count: ")
+[print] println("0")
+[print] println("Media manager test completed")"
+`;

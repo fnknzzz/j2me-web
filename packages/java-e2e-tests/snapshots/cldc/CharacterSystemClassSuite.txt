@@ -1,0 +1,39 @@
+=== instance_methods ===
+cA1_class=java.lang.Character
+cA1_charValue=A
+cA1_toString=A
+cA1_hashCode=65
+cA1_equals_cA2=true
+cA1_equals_cB=false
+cA1_equals_null=false
+cA1_equals_nonCharacter=false
+cz_charValue=z
+cz_toString=z
+=== static_isDigit_and_case ===
+isDigit_9=true
+isDigit_a=false
+isDigit_fullwidth_1=true
+isUpperCase_A=true
+isUpperCase_a=false
+isLowerCase_a=true
+isLowerCase_A=false
+isUpperCase_exclam=false
+isLowerCase_exclam=false
+isUpperCase_zhong=false
+isLowerCase_zhong=false
+=== static_toUpperLower ===
+toUpperCase_a=A
+toUpperCase_A=A
+toLowerCase_A=a
+toLowerCase_a=a
+toUpperCase_exclam=!
+toLowerCase_exclam=!
+=== static_digit_radix ===
+digit_9_10=9
+digit_9_2=-1
+digit_A_16=10
+digit_a_16=10
+digit_G_16=-1
+digit_1_radix_1=-1
+digit_z_radix_40=-1
+digit_quest_10=-1

@@ -1,0 +1,23 @@
+=== testConstructorWithOutputStream ===
+OutputStreamWriter created successfully
+=== testConstructorWithEncoding ===
+OutputStreamWriter with encoding created successfully
+=== testWriteSingleChar ===
+Wrote char, byte value: 65
+=== testWriteCharArray ===
+Wrote char array, length: 5
+First byte: 72
+Last byte: 111
+=== testWriteString ===
+Wrote string, length: 5
+First byte: 87
+Last byte: 100
+=== testFlush ===
+Flush completed
+=== testClose ===
+Close completed
+=== testMultipleWrites ===
+Multiple writes, length: 3
+Byte 0: 65
+Byte 1: 66
+Byte 2: 67

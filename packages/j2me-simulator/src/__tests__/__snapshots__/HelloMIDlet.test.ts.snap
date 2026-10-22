@@ -1,0 +1,133 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HelloMIDlet > should run HelloMIDlet and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] stringWidth("Hello, J2ME World!") => 144
+[font] stringWidth("H") => 8
+[font] stringWidth("He") => 16
+[font] stringWidth("Hel") => 24
+[font] stringWidth("Hell") => 32
+[font] stringWidth("Hello") => 40
+[font] stringWidth("Hello,") => 48
+[font] stringWidth("Hello, ") => 56
+[font] stringWidth("Hello, J") => 64
+[font] stringWidth("Hello, J2") => 72
+[font] stringWidth("Hello, J2M") => 80
+[font] stringWidth("Hello, J2ME") => 88
+[font] stringWidth("Hello, J2ME ") => 96
+[font] stringWidth("Hello, J2ME W") => 104
+[font] stringWidth("Hello, J2ME Wo") => 112
+[font] stringWidth("Hello, J2ME Wor") => 120
+[font] stringWidth("Hello, J2ME Worl") => 128
+[font] stringWidth("Hello, J2ME World") => 136
+[font] stringWidth("Hello, J2ME World!") => 144
+[font] stringWidth("W") => 8
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] stringWidth("H") => 8
+[font] stringWidth("He") => 16
+[font] stringWidth("Hel") => 24
+[font] stringWidth("Hell") => 32
+[font] stringWidth("Hello") => 40
+[font] stringWidth("Hello,") => 48
+[font] stringWidth("Hello, ") => 56
+[font] stringWidth("Hello, J") => 64
+[font] stringWidth("Hello, J2") => 72
+[font] stringWidth("Hello, J2M") => 80
+[font] stringWidth("Hello, J2ME") => 88
+[font] stringWidth("Hello, J2ME ") => 96
+[font] stringWidth("Hello, J2ME W") => 104
+[font] stringWidth("Hello, J2ME Wo") => 112
+[font] stringWidth("Hello, J2ME Wor") => 120
+[font] stringWidth("Hello, J2ME Worl") => 128
+[font] stringWidth("Hello, J2ME World") => 136
+[font] stringWidth("Hello, J2ME World!") => 144
+[font] stringWidth("Hello, J2ME World!") => 144
+[font] stringWidth("H") => 8
+[font] stringWidth("He") => 16
+[font] stringWidth("Hel") => 24
+[font] stringWidth("Hell") => 32
+[font] stringWidth("Hello") => 40
+[font] stringWidth("Hello,") => 48
+[font] stringWidth("Hello, ") => 56
+[font] stringWidth("Hello, J") => 64
+[font] stringWidth("Hello, J2") => 72
+[font] stringWidth("Hello, J2M") => 80
+[font] stringWidth("Hello, J2ME") => 88
+[font] stringWidth("Hello, J2ME ") => 96
+[font] stringWidth("Hello, J2ME W") => 104
+[font] stringWidth("Hello, J2ME Wo") => 112
+[font] stringWidth("Hello, J2ME Wor") => 120
+[font] stringWidth("Hello, J2ME Worl") => 128
+[font] stringWidth("Hello, J2ME World") => 136
+[font] stringWidth("Hello, J2ME World!") => 144
+[font] stringWidth("W") => 8
+[font] stringWidth("H") => 8
+[font] stringWidth("He") => 16
+[font] stringWidth("Hel") => 24
+[font] stringWidth("Hell") => 32
+[font] stringWidth("Hello") => 40
+[font] stringWidth("Hello,") => 48
+[font] stringWidth("Hello, ") => 56
+[font] stringWidth("Hello, J") => 64
+[font] stringWidth("Hello, J2") => 72
+[font] stringWidth("Hello, J2M") => 80
+[font] stringWidth("Hello, J2ME") => 88
+[font] stringWidth("Hello, J2ME ") => 96
+[font] stringWidth("Hello, J2ME W") => 104
+[font] stringWidth("Hello, J2ME Wo") => 112
+[font] stringWidth("Hello, J2ME Wor") => 120
+[font] stringWidth("Hello, J2ME Worl") => 128
+[font] stringWidth("Hello, J2ME World") => 136
+[font] stringWidth("Hello, J2ME World!") => 144
+[font] stringWidth("H") => 8
+[font] stringWidth("He") => 16
+[font] stringWidth("Hel") => 24
+[font] stringWidth("Hell") => 32
+[font] stringWidth("Hello") => 40
+[font] stringWidth("Hello,") => 48
+[font] stringWidth("Hello, ") => 56
+[font] stringWidth("Hello, J") => 64
+[font] stringWidth("Hello, J2") => 72
+[font] stringWidth("Hello, J2M") => 80
+[font] stringWidth("Hello, J2ME") => 88
+[font] stringWidth("Hello, J2ME ") => 96
+[font] stringWidth("Hello, J2ME W") => 104
+[font] stringWidth("Hello, J2ME Wo") => 112
+[font] stringWidth("Hello, J2ME Wor") => 120
+[font] stringWidth("Hello, J2ME Worl") => 128
+[font] stringWidth("Hello, J2ME World") => 136
+[font] stringWidth("Hello, J2ME World!") => 144
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("HelloMIDlet started")
+[print] println("Form title: Hello J2ME")
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawString("Hello J2ME", 2, 2, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":12105912,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] drawString("Hello, J2ME World!", 0, 0, 20, {"surfaceId":"<surface-1>","color":0,"clipX":4,"clipY":24,"clipWidth":232,"clipHeight":16,"translateX":4,"translateY":24,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] flush("<surface-1>")
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] drawString("Hello J2ME", 2, 2, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":12105912,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] drawString("Hello, J2ME World!", 0, 0, 20, {"surfaceId":"<surface-1>","color":0,"clipX":4,"clipY":24,"clipWidth":232,"clipHeight":16,"translateX":4,"translateY":24,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] flush("<surface-1>")
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] drawString("Hello J2ME", 2, 2, 20, {"surfaceId":"<surface-1>","color":0,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":12105912,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] drawString("Hello, J2ME World!", 0, 0, 20, {"surfaceId":"<surface-1>","color":0,"clipX":4,"clipY":24,"clipWidth":232,"clipHeight":16,"translateX":4,"translateY":24,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":8})
+[graphics] flush("<surface-1>")
+[print] println("HelloMIDlet destroyed")"
+`;

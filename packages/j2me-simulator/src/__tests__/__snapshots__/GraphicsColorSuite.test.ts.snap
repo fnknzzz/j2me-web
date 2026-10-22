@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GraphicsColorSuite > should run GraphicsColorSuite and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("GraphicsColorSuite started")
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[print] println("=== Color Operations ===")
+[print] println("Set RGB(255,0,0), get: 16711680")
+[print] println("Set RGB(0,255,0), get: 65280")
+[print] println("Set RGB(0,0,255), get: 255")
+[print] println("Set 0xFFFFFF, get: 16777215")
+[print] println("Set gray 0, get: 0")
+[print] println("Set gray 128, get: 128")
+[print] println("Set gray 255, get: 255")
+[graphics] flush("<surface-1>")"
+`;

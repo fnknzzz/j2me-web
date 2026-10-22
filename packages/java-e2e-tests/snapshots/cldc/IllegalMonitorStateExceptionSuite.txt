@@ -1,0 +1,20 @@
+=== defaultCtor ===
+default/class = java.lang.IllegalMonitorStateException
+default/message = null
+default/toString = java.lang.IllegalMonitorStateException
+=== messageCtor ===
+message/class = java.lang.IllegalMonitorStateException
+message/message = illegal-monitor-state
+message/toString = java.lang.IllegalMonitorStateException: illegal-monitor-state
+=== nullMessageCtor ===
+nullMessage/class = java.lang.IllegalMonitorStateException
+nullMessage/message = null
+nullMessage/toString = java.lang.IllegalMonitorStateException
+=== throwCatchDefault ===
+throwDefault/caughtClass = java.lang.IllegalMonitorStateException
+throwDefault/message = null
+throwDefault/toString = java.lang.IllegalMonitorStateException
+=== throwCatchMessage ===
+throwMessage/caughtClass = java.lang.IllegalMonitorStateException
+throwMessage/message = after-throw
+throwMessage/toString = java.lang.IllegalMonitorStateException: after-throw

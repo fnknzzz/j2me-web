@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GraphicsSuite > should run GraphicsSuite and match snapshot 1`] = `
+"[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] createSurface("<surface-1>", 240, 320)
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[font] getHeight() => 16
+[font] getBaselinePosition() => 12
+[display] getWidth() => 240
+[display] getHeight() => 320
+[display] getWidth() => 240
+[display] getHeight() => 320
+[print] println("GraphicsSuite started")
+[display] getWidth() => 240
+[display] getHeight() => 320
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":16777215,"clipX":0,"clipY":0,"clipWidth":240,"clipHeight":320,"translateX":0,"translateY":0,"strokeStyle":0,"fontHandle":"<handle-1>","fontFace":0,"fontStyle":0,"fontSize":0})
+[graphics] drawShapeBatch(2, 14, "[216 vertices]", {"surfaceId":"<surface-1>","color":0,"clipX":10,"clipY":20,"clipWidth":100,"clipHeight":150,"translateX":50,"translateY":30,"strokeStyle":1,"fontHandle":"<handle-1>","fontFace":32,"fontStyle":1,"fontSize":16})
+[graphics] drawShapeBatch(0, 6, "[312 vertices]", {"surfaceId":"<surface-1>","color":0,"clipX":10,"clipY":20,"clipWidth":100,"clipHeight":150,"translateX":50,"translateY":30,"strokeStyle":1,"fontHandle":"<handle-1>","fontFace":32,"fontStyle":1,"fontSize":16})
+[graphics] drawShapeBatch(0, 6, "[6 vertices]", {"surfaceId":"<surface-1>","color":0,"clipX":10,"clipY":20,"clipWidth":100,"clipHeight":150,"translateX":50,"translateY":30,"strokeStyle":1,"fontHandle":"<handle-1>","fontFace":32,"fontStyle":1,"fontSize":16})
+[graphics] drawShapeBatch(6, 18, "[6 vertices]", {"surfaceId":"<surface-1>","color":0,"clipX":10,"clipY":20,"clipWidth":100,"clipHeight":150,"translateX":50,"translateY":30,"strokeStyle":1,"fontHandle":"<handle-1>","fontFace":32,"fontStyle":1,"fontSize":16})
+[graphics] drawShapeBatch(4, 16, "[6 vertices]", {"surfaceId":"<surface-1>","color":0,"clipX":10,"clipY":20,"clipWidth":100,"clipHeight":150,"translateX":50,"translateY":30,"strokeStyle":1,"fontHandle":"<handle-1>","fontFace":32,"fontStyle":1,"fontSize":16})
+[graphics] drawShapeBatch(9, 20, "[6 vertices]", {"surfaceId":"<surface-1>","color":0,"clipX":10,"clipY":20,"clipWidth":100,"clipHeight":150,"translateX":50,"translateY":30,"strokeStyle":1,"fontHandle":"<handle-1>","fontFace":32,"fontStyle":1,"fontSize":16})
+[graphics] drawShapeBatch(7, 19, "[6 vertices]", {"surfaceId":"<surface-1>","color":0,"clipX":10,"clipY":20,"clipWidth":100,"clipHeight":150,"translateX":50,"translateY":30,"strokeStyle":1,"fontHandle":"<handle-1>","fontFace":32,"fontStyle":1,"fontSize":16})
+[graphics] drawString("Test", 10, 190, 20, {"surfaceId":"<surface-1>","color":0,"clipX":10,"clipY":20,"clipWidth":100,"clipHeight":150,"translateX":50,"translateY":30,"strokeStyle":1,"fontHandle":"<handle-1>","fontFace":32,"fontStyle":1,"fontSize":16})
+[graphics] flush("<surface-1>")
+[print] println("GraphicsSuite destroyed")"
+`;

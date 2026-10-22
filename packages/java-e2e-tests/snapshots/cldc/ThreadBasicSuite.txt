@@ -1,0 +1,6 @@
+current_thread_ok=true
+active_count=1
+name=TestThread
+priority=5
+is_alive=false
+priority_after_set=10

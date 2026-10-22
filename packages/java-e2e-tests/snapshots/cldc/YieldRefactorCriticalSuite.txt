@@ -1,0 +1,23 @@
+=== YIELD Critical Tests ===
+
+Test 1: Main Thread Wait
+worker-start
+worker-sum=4950
+worker-done
+main-done
+
+Test 2: State Accumulation
+accumulation-start
+counter1=30
+counter2=30
+counter3=30
+accumulation-done
+
+Test 3: Deep Nesting
+deep-start
+level1=20
+level2=30
+level3=40
+deep-done
+
+=== All Critical Tests Passed ===

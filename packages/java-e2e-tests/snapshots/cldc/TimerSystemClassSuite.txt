@@ -1,0 +1,30 @@
+=== constructors_and_basic_cancel ===
+ctor_t1_class=java.util.Timer
+ctor_t2_class=java.util.Timer
+ctor_t3_class=java.util.Timer
+ctor_t4_class=java.util.Timer
+t1_cancel_once_done
+t1_cancel_twice_done
+t2_t3_t4_cancel_done
+=== schedule_with_date_and_delay ===
+schedule_with_date_and_delay_submitted
+schedule_with_date_and_delay_canceled
+task_run:date:1
+task_run:delay:1
+=== schedule_with_period_and_purge ===
+schedule_with_period_submitted
+purge_count_after_cancel=0
+purge_count_second=0
+schedule_with_period_timer_canceled
+task_run:periodic_delay:6
+task_run:periodic_date:6
+=== schedule_at_fixed_rate ===
+schedule_at_fixed_rate_submitted
+schedule_at_fixed_rate_timer_canceled
+task_run:fixed_delay:7
+task_run:fixed_date:7
+=== finalize_behavior ===
+before_finalize_submitted
+finalize_invoked_ok
+finalize_after_cancel_done
+task_run:finalize_task:3
