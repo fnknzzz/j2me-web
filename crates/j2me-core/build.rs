@@ -120,13 +120,16 @@ fn build_m3gcore(manifest_dir: &str, out_dir: &Path) {
     build.compile("m3gcore");
 }
 
-fn build_boot_image(manifest_dir: &str, out_dir: &Path, runtime_jar: &Path) {
+fn build_boot_image(manifest_dir: &str, out_dir: &Path, runtime_jar: &Path, release: bool) {
     let cargo = env::var_os("CARGO").unwrap_or_else(|| "cargo".into());
     let output_path = out_dir.join("classes.boot");
     let generator_target = out_dir.join("boot-generator-target");
-    let output = Command::new(cargo)
-        .arg("run")
-        .arg("--quiet")
+    let mut command = Command::new(cargo);
+    command.arg("run").arg("--quiet");
+    if release {
+        command.arg("--release");
+    }
+    let output = command
         .arg("--features")
         .arg("boot-generator")
         .arg("--bin")
@@ -220,7 +223,7 @@ fn main() {
     let runtime_jar = j2me_rt_dir.join(format!("classes.{mode}.jar"));
     if env::var("TARGET").is_ok_and(|target| target.starts_with("wasm32")) {
         emit_rerun_if_changed_for_directory(&Path::new(&manifest_dir).join("src"));
-        build_boot_image(&manifest_dir, out_dir_path, &runtime_jar);
+        build_boot_image(&manifest_dir, out_dir_path, &runtime_jar, is_release);
     }
 
     // Build test Java classes
